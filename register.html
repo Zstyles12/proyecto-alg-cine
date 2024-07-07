@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <style>
+        body {
+            background-color: #f7f9fc;
+        }
+        .register-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            position: relative;
+        }
+        .form-control-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .custom-switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        .custom-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #007bff;
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-right mt-3">
+            <label for="switchMode">Modo Oscuro</label>
+            <label class="custom-switch">
+                <input type="checkbox" id="switchMode">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="register-container mt-5">
+            <h2 class="text-center mb-4">Registro</h2>
+            <form id="registerForm">
+                <div class="form-group mb-3">
+                    <label for="cedula">Cédula:</label>
+                    <input type="text" class="form-control" id="cedula" required>
+                    <i class="bi bi-person-badge-fill form-control-icon"></i>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="nombres">Nombres:</label>
+                    <input type="text" class="form-control" id="nombres" required>
+                    <i class="bi bi-person-fill form-control-icon"></i>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" class="form-control" id="apellidos" required>
+                    <i class="bi bi-person-fill form-control-icon"></i>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="email">Correo:</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <i class="bi bi-envelope-fill form-control-icon"></i>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="genero">Género:</label>
+                    <select class="form-control" id="genero" required>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <i class="bi bi-gender-ambiguous form-control-icon"></i>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="ubicacion">Ubicación:</label>
+                    <input type="text" class="form-control" id="ubicacion" required>
+                    <i class="bi bi-geo-alt-fill form-control-icon"></i>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" class="form-control" id="fecha_nacimiento" required>
+                    <i class="bi bi-calendar-date-fill form-control-icon"></i>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" class="form-control" id="password" required>
+                    <i class="bi bi-lock-fill form-control-icon"></i>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="confirmPassword">Confirmar Contraseña:</label>
+                    <input type="password" class="form-control" id="confirmPassword" required>
+                </div>
+
+                
+                <button type="submit" class="btn btn-primary btn-block w-100">Registrarse</button>
+            </form>
+            <div class="text-center mt-3">
+                <p>¿Ya tienes una cuenta? <a href="login.html" class="btn btn-link">Inicia sesión aquí</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

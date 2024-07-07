@@ -1,0 +1,71 @@
+body {
+    background-image: url('/assets/img/xo.jfif');
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Hace que la imagen de fondo se mantenga fija cuando se hace scroll */
+    height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
+}
+
+body.dark-mode {
+    background-image: url('/assets/img/your-dark-background.jpg'); /* Reemplaza con la ruta de tu imagen de fondo para el modo oscuro */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Hace que la imagen de fondo se mantenga fija cuando se hace scroll */
+    height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
+}
+.login-container,
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 0; /* Alinea el contenedor a la izquierda */
+    }
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .login-container,
+.dark-mode .register-container {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+.dark-mode .form-control {
+    background-color: #3f3c3c;
+    border-color: #444;
+    color: #ffffff;
+}
+
+.dark-mode .form-control:focus {
+    background-color: #f1e7e7;
+    border-color: #e0e4e9;
+    color: #ffffff;
+}
+
+.dark-mode .form-control-icon {
+    color: #ffffff;
+}
+
+.dark-mode .btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.dark-mode .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.dark-mode .btn-link {
+    color: #007bff;
+}
+
+.dark-mode .btn-link:hover {
+    color: #0056b3;
+}
