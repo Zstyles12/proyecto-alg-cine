@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', function () {
     let peliculas = [];
 
@@ -17,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(data => {
                 peliculas = data;
                 mostrarPeliculas(peliculas);
-                inicializarCalendario();  // Mueve esta línea aquí
+                inicializarCalendario();  // Inicializar calendario después de cargar películas
             })
             .catch(error => console.error('Error al cargar las películas:', error));
     }
@@ -75,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             locale: "es",
             dayMaxEventRows: true,
-            
         });
         calendar.render();
     }
@@ -84,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.toggle('dark-mode');
         const isDarkMode = document.body.classList.contains('dark-mode');
         localStorage.setItem('dark-mode', isDarkMode);
+        inicializarCalendario();  // Re-inicializar calendario para aplicar el nuevo tema
     }
 
     // Load dark mode setting
@@ -92,84 +91,67 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('darkModeSwitch').checked = true;
     }
 
+    document.getElementById('darkModeSwitch').addEventListener('change', toggleDarkMode);
+
     // Ejemplo de notificación con SweetAlert2
-    Swalfire({
+    Swal.fire({
         title: '¡Estreno Imperdible!',
-        text: 'No te pierdas el estreno de "Deapool & Wolverine" este 25 de julio.',
+        text: 'No te pierdas el estreno de "Deadpool & Wolverine" este 25 de julio.',
         icon: 'info',
         confirmButtonText: 'OK'
     });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    const darkModeSwitch = document.getElementById('darkModeSwitch');
-    const body = document.body;
-
-    var calendarEl = document.getElementById('calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth'
-    });
-    calendar.render();
 
     // Configurar partículas
     particlesJS('left-particles', {
         particles: {
-            number: { value: 70 },
+            number: { value: 50 },
             color: { value: '#185abc' },
             shape: { type: 'star' },
             opacity: { value: 0.5 },
-            size: { value: 5 },
+            size: { value: 3 },
             line_linked: { enable: false, color: '#ffffff' },
             move: { speed: 2 }
         },
         interactivity: {
-            events: { onhover: { enable: true, mode: 'grab' } }
+            events: { onhover: { enable: true, mode: 'repulse' } }
         }
     });
 
     particlesJS('right-particles', {
         particles: {
-            number: { value: 70 },
+            number: { value: 50 },
             color: { value: '#185abc' },
             shape: { type: 'star' },
             opacity: { value: 0.5 },
-            size: { value: 5 },
+            size: { value: 3 },
             line_linked: { enable: false, color: '#ffffff' },
             move: { speed: 2 }
         },
         interactivity: {
-            events: { onhover: { enable: true, mode: 'grab' } }
+            events: { onhover: { enable: true, mode: 'repulse' } }
         }
     });
 
     // Check if dark mode is enabled in local storage
     if (localStorage.getItem('darkMode') === 'enabled') {
-        body.classList.add('dark-mode');
-        darkModeSwitch.checked = true;
-         // Cambiar color de partículas para modo oscuro
-         pJSDom.forEach(p => {
+        document.body.classList.add('dark-mode');
+        document.getElementById('darkModeSwitch').checked = true;
+        pJSDom.forEach(p => {
             p.pJS.particles.color.value = '#bbbbbb';
             p.pJS.particles.line_linked.color = '#bbbbbb';
-    });
-    
+        });
     }
 
-    // Check if dark mode is enabled in local storage
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        body.classList.add('dark-mode');
-        darkModeSwitch.checked = true;
-    }
-
-    darkModeSwitch.addEventListener('change', function() {
+    document.getElementById('darkModeSwitch').addEventListener('change', function () {
         if (darkModeSwitch.checked) {
-            body.classList.add('dark-mode');
+            document.body.classList.add('dark-mode');
             localStorage.setItem('darkMode', 'enabled');
             pJSDom.forEach(p => {
                 p.pJS.particles.color.value = '#bbbbbb';
                 p.pJS.particles.line_linked.color = '#bbbbbb';
             });
         } else {
-            body.classList.remove('dark-mode');
+            document.body.classList.remove('dark-mode');
             localStorage.setItem('darkMode', 'disabled');
             pJSDom.forEach(p => {
                 p.pJS.particles.color.value = '#ffffff';
@@ -177,7 +159,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
 
-        calendar.render();
-
+        inicializarCalendario();  // Re-inicializar calendario para aplicar el nuevo tema
     });
 });
