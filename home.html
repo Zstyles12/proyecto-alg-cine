@@ -9,8 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <div class="container mt-5">
+    <div id="left-particles"></div>
+    <div id="right-particles"></div>   
+    <div  id="main-content" class="container mt-5">
         <h1 class="text-center">Cartelera de Cine</h1>
+        <div class="text-right">
+        <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+        <label class="form-check-label" for="darkModeSwitch">Modo Oscuro</label>
+        </div>
+    </div>
         <div id="alertas"></div>
         <div class="row mb-3">
             <div class="col-md-6">
@@ -19,18 +27,21 @@
             <div class="col-md-6">
                 <select id="filtroCategoria" class="form-control">
                     <option value="">Todas las categorías</option>
-                    <option value="Acción">Acción</option>
-                    <option value="Documental">Documental</option>
-                    <option value="Superheroes">Superheroes></option>
+                    <option value="Accion">Accion</option>
                     <option value="Animacion">Animacion</option>
-                    <option value="Fantasia">Fantasia</option>
-                    <option value="Drama">Drama</option>
-                    <option value="Aventura">aventura</option>
-                    <option value="Terro">Terror</option>
-                    <option value="Romance">Romance</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Ciencia Ficcion">Ciencia Ficcion</option>
+                    <option value="Conciertos">Conciertos</option>
                     <option value="Comedia">Comedia</option>
-                    <!-- Agrega más categorías aquí -->
+                    <option value="Documental">Documental</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Fantasia">Fantasia</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Superheroes">Superheroes</option>
+                    <option value="Terror">Terror</option>
+                    
                 </select>
+                
             </div>
         </div>
         <div class="row" id="peliculas"></div>
@@ -39,7 +50,8 @@
     
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src=https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js></script>  
+    <script src=https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>  
     <script src="/assets/js/script.js"></script>
 </body>
 </html>

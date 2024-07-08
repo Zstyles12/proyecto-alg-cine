@@ -80,11 +80,104 @@ document.addEventListener('DOMContentLoaded', function () {
         calendar.render();
     }
 
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        const isDarkMode = document.body.classList.contains('dark-mode');
+        localStorage.setItem('dark-mode', isDarkMode);
+    }
+
+    // Load dark mode setting
+    if (localStorage.getItem('dark-mode') === 'true') {
+        document.body.classList.add('dark-mode');
+        document.getElementById('darkModeSwitch').checked = true;
+    }
+
     // Ejemplo de notificación con SweetAlert2
-    Swal.fire({
+    Swalfire({
         title: '¡Estreno Imperdible!',
         text: 'No te pierdas el estreno de "Deapool & Wolverine" este 25 de julio.',
         icon: 'info',
         confirmButtonText: 'OK'
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const darkModeSwitch = document.getElementById('darkModeSwitch');
+    const body = document.body;
+
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth'
+    });
+    calendar.render();
+
+    // Configurar partículas
+    particlesJS('left-particles', {
+        particles: {
+            number: { value: 70 },
+            color: { value: '#185abc' },
+            shape: { type: 'star' },
+            opacity: { value: 0.5 },
+            size: { value: 5 },
+            line_linked: { enable: false, color: '#ffffff' },
+            move: { speed: 2 }
+        },
+        interactivity: {
+            events: { onhover: { enable: true, mode: 'grab' } }
+        }
+    });
+
+    particlesJS('right-particles', {
+        particles: {
+            number: { value: 70 },
+            color: { value: '#185abc' },
+            shape: { type: 'star' },
+            opacity: { value: 0.5 },
+            size: { value: 5 },
+            line_linked: { enable: false, color: '#ffffff' },
+            move: { speed: 2 }
+        },
+        interactivity: {
+            events: { onhover: { enable: true, mode: 'grab' } }
+        }
+    });
+
+    // Check if dark mode is enabled in local storage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        body.classList.add('dark-mode');
+        darkModeSwitch.checked = true;
+         // Cambiar color de partículas para modo oscuro
+         pJSDom.forEach(p => {
+            p.pJS.particles.color.value = '#bbbbbb';
+            p.pJS.particles.line_linked.color = '#bbbbbb';
+    });
+    
+    }
+
+    // Check if dark mode is enabled in local storage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        body.classList.add('dark-mode');
+        darkModeSwitch.checked = true;
+    }
+
+    darkModeSwitch.addEventListener('change', function() {
+        if (darkModeSwitch.checked) {
+            body.classList.add('dark-mode');
+            localStorage.setItem('darkMode', 'enabled');
+            pJSDom.forEach(p => {
+                p.pJS.particles.color.value = '#bbbbbb';
+                p.pJS.particles.line_linked.color = '#bbbbbb';
+            });
+        } else {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('darkMode', 'disabled');
+            pJSDom.forEach(p => {
+                p.pJS.particles.color.value = '#ffffff';
+                p.pJS.particles.line_linked.color = '#ffffff';
+            });
+        }
+
+        calendar.render();
+
     });
 });

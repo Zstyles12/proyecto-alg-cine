@@ -243,126 +243,126 @@
 
 
     {
-        "titulo": "Pelicula 2",
-        "descripcion": "Descripción de la película 2.",
-        "genero": "Documental",
-        "actores": ["Actor 3", "Actor 4"],
-        "trailer": "https://www.youtube.com/watch?v=trailer2",
-        "imagen": "ruta_imagen2.jpg",
-        "fecha": "2023-07-11"
+        "titulo": "Transformer Uno",
+        "descripcion": "Transformers One es una próxima película animada de acción y ciencia ficción estadounidense basada en la línea de juguetes Transformers de Hasbro. La película está dirigida por Josh Cooley y escrita por Andrew Barrer, Gabriel Ferrari, Steve Desmond y Michael Sherman.",
+        "genero": "Ciencia Ficcion  ",
+        "actores": ["Chris Hemsworth ", "Scarlett Johansson"],
+        "trailer": "https://www.youtube.com/watch?v=sj8ANC-d-Y0",
+        "imagen": "/assets/img/transformers.webp",
+        "fecha": "2024-09-12"
     },
 
 
     {
-        "titulo": "Pelicula 2",
-        "descripcion": "Descripción de la película 2.",
-        "genero": "Documental",
-        "actores": ["Actor 3", "Actor 4"],
-        "trailer": "https://www.youtube.com/watch?v=trailer2",
-        "imagen": "ruta_imagen2.jpg",
-        "fecha": "2023-07-11"
+        "titulo": "No hables con extraños",
+        "descripcion": "No hables con extraños es una próxima película estadounidense de suspenso y terror psicológico escrita y dirigida por James Watkins.Es una nueva versión de la película danesa Gæsterne de 2022. La película está protagonizada por James McAvoy, Mackenzie Davis y Scoot McNairy.",
+        "genero": "Terror",
+        "actores": ["James McAvoy", "Mackenzie Davies"],
+        "trailer": "https://www.youtube.com/watch?v=MMd0xkGVPXw",
+        "imagen": "/assets/img/nohables.webp",
+        "fecha": "2024-09-12"
     },
 
 
     {
-        "titulo": "Pelicula 2",
-        "descripcion": "Descripción de la película 2.",
-        "genero": "Documental",
-        "actores": ["Actor 3", "Actor 4"],
-        "trailer": "https://www.youtube.com/watch?v=trailer2",
-        "imagen": "ruta_imagen2.jpg",
-        "fecha": "2023-07-11"
+        "titulo": "Kraven the Hunter ",
+        "descripcion": "El inmigrante ruso Sergei Kravinoff emprende una misión para demostrar que es el mejor cazador del mundo.",
+        "genero": "Accion",
+        "actores": ["Aaron Taylor-Johnson ", "Russell Crowe"],
+        "trailer": "https://www.youtube.com/watch?v=JoWdhvrkKjo",
+        "imagen": "/assets/img/kraven.webp",
+        "fecha": "2024-12-12"
     },
 
 
     {
-        "titulo": "Pelicula 2",
-        "descripcion": "Descripción de la película 2.",
+        "titulo": "Sonic 3, la película ",
+        "descripcion": "Sonic 3, La película ​​ es una próxima película de comedia de acción y aventuras basada en la serie de videojuegos publicada por Sega, la secuela de Sonic, la película y Sonic 2, la película.",
         "genero": "Documental",
-        "actores": ["Actor 3", "Actor 4"],
-        "trailer": "https://www.youtube.com/watch?v=trailer2",
-        "imagen": "ruta_imagen2.jpg",
-        "fecha": "2023-07-11"
+        "actores": ["Keanu Reeves", "Jim Carrey"],
+        "trailer": "https://www.youtube.com/watch?v=6BRTynghfp0",
+        "imagen": "/assets/img/sonic.jpg",
+        "fecha": "2024-12-26"
     },
 
 
     {
-        "titulo": "Pelicula 2",
-        "descripcion": "Descripción de la película 2.",
-        "genero": "Documental",
-        "actores": ["Actor 3", "Actor 4"],
-        "trailer": "https://www.youtube.com/watch?v=trailer2",
-        "imagen": "ruta_imagen2.jpg",
-        "fecha": "2023-07-11"
-    },
-
-
-
-    {
-        "titulo": "Pelicula 2",
-        "descripcion": "Descripción de la película 2.",
-        "genero": "Documental",
-        "actores": ["Actor 3", "Actor 4"],
-        "trailer": "https://www.youtube.com/watch?v=trailer2",
-        "imagen": "ruta_imagen2.jpg",
-        "fecha": "2023-07-11"
+        "titulo": "Borderlands",
+        "descripcion": "Borderlands es una próxima película estadounidense de comedia de acción y ciencia ficción dirigida por Eli Roth, quien coescribió el guion con Joe Crombie, basada en la serie de videojuegos del mismo nombre desarrollada por Gearbox Software y publicada por 2K.",
+        "genero": "Accion",
+        "actores": ["Kevin Hart", "Ariana Greenblatt"],
+        "trailer": "https://www.youtube.com/watch?v=Zusyjsct4WA",
+        "imagen": "/assets/img/borderlands.jpg",
+        "fecha": "2024-08-08"
     },
 
 
 
     {
-        "titulo": "Pelicula 2",
-        "descripcion": "Descripción de la película 2.",
-        "genero": "Documental",
-        "actores": ["Actor 3", "Actor 4"],
-        "trailer": "https://www.youtube.com/watch?v=trailer2",
-        "imagen": "ruta_imagen2.jpg",
-        "fecha": "2023-07-11"
-    },
-
-
-    {
-        "titulo": "Pelicula 2",
-        "descripcion": "Descripción de la película 2.",
-        "genero": "Documental",
-        "actores": ["Actor 3", "Actor 4"],
-        "trailer": "https://www.youtube.com/watch?v=trailer2",
-        "imagen": "ruta_imagen2.jpg",
-        "fecha": "2023-07-11"
-    },
-
-
-    {
-        "titulo": "Pelicula 2",
-        "descripcion": "Descripción de la película 2.",
-        "genero": "Documental",
-        "actores": ["Actor 3", "Actor 4"],
-        "trailer": "https://www.youtube.com/watch?v=trailer2",
-        "imagen": "ruta_imagen2.jpg",
-        "fecha": "2023-07-11"
+        "titulo": "The crow",
+        "descripcion": "The Crow es una futura película estadounidense de superhéroes sobrenaturales dirigida por Rupert Sanders y con un guion de Zach Baylin y Will Schneider. Será la quinta entrega de la serie de películas The Crow, The Crow: City of Angels, The Crow: Salvation y The Crow: Wicked Prayer y servirá como reinicio de la Saga.",
+        "genero": "Accion",
+        "actores": ["Bill Skarsgård", "FKA twigs"],
+        "trailer": "https://www.youtube.com/watch?v=djSKp_pwmOA",
+        "imagen": "/assets/img/crow.jpg",
+        "fecha": "2024-08-22"
     },
 
 
 
     {
-        "titulo": "Pelicula 2",
-        "descripcion": "Descripción de la película 2.",
-        "genero": "Documental",
-        "actores": ["Actor 3", "Actor 4"],
-        "trailer": "https://www.youtube.com/watch?v=trailer2",
-        "imagen": "ruta_imagen2.jpg",
-        "fecha": "2023-07-11"
+        "titulo": "Blackpink World Tour Born Pink In Cinemas",
+        "descripcion": "¡La gira BORN PINK de BLACKPINK que cautivó al mundo llega a la pantalla grande, celebrando el octavo aniversario del grupo desde su debut! Con una audiencia de 1,8 millones y batiendo récords mundiales en giras de conciertos de grupos femeninos, ¡experimente la energía de las presentaciones en vivo en cines de todo el mundo! Con el icónico set de 'Hanok' que ha cautivado a los fans y a la prensa de todo el mundo, la película muestra una escala de producción sin precedentes, presentando versiones arregladas exclusivamente de las canciones exitosas de BLACKPINK únicas para este concierto y abarcando actuaciones desde el Gocheok Dome de Seúl junto con imágenes de otras ciudades a lo largo de la gira mundial. . Únase a nosotros para vivir todos los momentos emocionantes, que se estrenará en más de 110 países y que marcará el estreno mundial de un evento cinematográfico más grande jamás realizado para un grupo femenino.",
+        "genero": "Conciertos",
+        "actores": ["Jisoo, Jennie, Rosé, Lisa"],
+        "trailer": "https://www.youtube.com/watch?v=nBVrh2HRdHQ",
+        "imagen": "/assets/img/blackpink.webp",
+        "fecha": "2024-07-31"
     },
 
 
     {
-        "titulo": "Pelicula 2",
-        "descripcion": "Descripción de la película 2.",
-        "genero": "Documental",
-        "actores": ["Actor 3", "Actor 4"],
-        "trailer": "https://www.youtube.com/watch?v=trailer2",
-        "imagen": "ruta_imagen2.jpg",
-        "fecha": "2023-07-11"
+        "titulo": "Tornados",
+        "descripcion": "Tornados es una próxima película estadounidense de dirigida por Lee Isaac Chung a partir de un guion de Mark L. Smith. Producida por Frank Marshall y Patrick Crowley, se describe como un nuevo capitulo de la película Twister de 1996.",
+        "genero": "Accion",
+        "actores": ["Glen Powell", "Anthony Ramos"],
+        "trailer": "https://www.youtube.com/watch?v=kFQPaJnUyq8",
+        "imagen": "/assets/img/tornados.jpg",
+        "fecha": "2024-07-11"
+    },
+
+
+    {
+        "titulo": "The Deep Web: Murdershow",
+        "descripcion": "La búsqueda de pistas sobre la muerte de su hermana lleva a un podcaster a la red profunda donde descubre The Murdershow, un sitio donde el mejor postor de criptomonedas selecciona cómo se matará a la víctima.",
+        "genero": "Terror",
+        "actores": ["Aiden Howard", "Lauren Jackson "],
+        "trailer": "https://www.youtube.com/watch?v=v98lU7v0XLk",
+        "imagen": "/assets/img/deepweb.jpeg",
+        "fecha": "2024-07-11"
+    },
+
+
+
+    {
+        "titulo": "La otra cara de la de la luna",
+        "descripcion": "La otra cara de la luna es una próxima película de comedia romántica de 2024 dirigida por Greg Berlanti, escrita por Rose Gilroy, y protagonizada por Scarlett Johansson y Channing Tatum.",
+        "genero": "Drama",
+        "actores": ["Scarlett Johansson", "Channing Tatum"],
+        "trailer": "https://www.youtube.com/watch?v=XhaFkc0ICMU",
+        "imagen": "/assets/img/luna.jpg",
+        "fecha": "2024-07-18"
+    },
+
+
+    {
+        "titulo": "Herencia Siniestra ",
+        "descripcion": "La búsqueda de Edward de su familia biológica lo lleva a él y a su novia a una hermosa villa en las montañas del norte de Portugal, donde finalmente conoce a su madre y a su hermano gemelo, pero pronto descubre que hay un monstruoso secreto.",
+        "genero": "Terror",
+        "actores": ["Alba Baptista", "Carloto Cotta"],
+        "trailer": "https://www.youtube.com/watch?v=aBL3h0Ux4cA",
+        "imagen": "/assets/img/herencia.jpg",
+        "fecha": "2024-08-08"
     }
 
 
