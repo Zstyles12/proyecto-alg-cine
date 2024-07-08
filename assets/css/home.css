@@ -1,0 +1,50 @@
+/* styles.css */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #989fa7;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+#calendar {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.fc-button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.fc-button:hover {
+    background-color: #0056b3;
+}

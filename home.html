@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera de Cine</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Cartelera de Cine</h1>
+        <div id="alertas"></div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <input type="text" id="busqueda" class="form-control" placeholder="Buscar...">
+            </div>
+            <div class="col-md-6">
+                <select id="filtroCategoria" class="form-control">
+                    <option value="">Todas las categorías</option>
+                    <option value="Acción">Acción</option>
+                    <option value="Documental">Documental</option>
+                    <option value="Superheroes">Superheroes></option>
+                    <option value="Animacion">Animacion</option>
+                    <option value="Fantasia">Fantasia</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Aventura">aventura</option>
+                    <option value="Terro">Terror</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Comedia">Comedia</option>
+                    <!-- Agrega más categorías aquí -->
+                </select>
+            </div>
+        </div>
+        <div class="row" id="peliculas"></div>
+        <div id="calendar"></div>
+    </div>
+    
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src=https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js></script>  
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+
+[
+    {
+        "titulo": "The Eras Tour Taylor`s version",
+        "descripcion": "La estrella del pop, Taylor Swift, ofrece un concierto inolvidable. La artista interpreta canciones de todas las épocas de su carrera.",
+        "genero": "Documental",
+        "actores": ["Taylor Swift"],
+        "trailer": "https://www.youtube.com/watch?v=5UBl0rLEl0w",
+        "imagen": "/assets/img/ErasTourTV.webp",
+        "fecha": "2024-10-13"
+        
+    },
+  
+    {
+        "titulo": "Deadpool & Wolverine",
+        "descripcion": "Wolverine se recupera de sus heridas cuando se cruza con el bocazas, Deadpool, que ha viajado en el tiempo para curarlo con la esperanza de hacerse amigos y formar un equipo para acabar con un enemigo común.",
+        "genero": "Superheroes",
+        "actores": ["Ryan Reynolds", "Hugh Jackman"],
+        "trailer": "https://www.youtube.com/watch?v=73_1biulkYk",
+        "imagen": "/assets/img/deadpool.jpg",
+        "fecha": "2024-07-25"
+    },
+
+    {
+        "titulo": "Intensamente 2 ",
+        "descripcion": " regresa a la mente de una Riley recién entrada en la adolescencia justo en el momento en que el Cuartel General está sufriendo una repentina reforma para hacerle hueco a algo totalmente inesperado: ¡Nuevas emociones! Alegría, Tristeza, Ira, Miedo y Asco, con años de impecable gestión a sus espaldas (según ellos...) no saben muy bien qué sentir cuando aparece Ansiedad. Y parece que no viene sola. ",
+        "genero": "Animacion",
+        "actores": [" Amy Poehler ", "Phylis Smith"],
+        "trailer": "https://www.youtube.com/watch?v=xiC2iXTXHxw",
+        "imagen": "/assets/img/intensamente2.webp",
+        "fecha": "2024-06-14"
+    },
+
+    {
+        "titulo": "Desafiantes",
+        "descripcion": "Tashi, entrenadora de tenis, ha convertido a Art, su esposo, en una de las grandes estrellas del circuito. Art, quien atraviesa una mala época, acepta jugar un torneo sin importancia, donde se enfrenta al exnovio de Tashi, su antiguo mejor amigo.",
+        "genero": "Drama",
+        "actores": ["Zendaya", "Mike Faist"],
+        "trailer": "https://www.youtube.com/watch?v=dtSZbtlhxjg",
+        "imagen": "/assets/img/desafiantes.jpg",
+        "fecha": "2024-04-24"
+    },
+
+    {
+        "titulo": "Wicked: parte uno",
+        "descripcion": "Wicked es una próxima película épica de fantasía musical dirigida por Jon M. Chu y adaptada a la pantalla por Winnie Holzman y Stephen Schwartz de su musical de 2003 del mismo nombre, que a su vez se basa en la novela de 1995 de Gregory Maguire del mismo nombre.",
+        "genero": "Fantasia",
+        "actores": ["Ariana grande", "Cynthia Erivo"],
+        "trailer": "https://www.youtube.com/watch?v=YZy2hnJc0b8",
+        "imagen": "/assets/img/wicked.jpg",
+        "fecha": "2024-11-22"
+    },
+
+
+    {
+        "titulo": "Furiosa: de la saga Mad Max",
+        "descripcion": "La joven Furiosa es arrebatada del Paraje Verde de las Muchas Madres por una horda de motociclistas. El señor de la guerra que dirige su grupo se enfrenta a otro tirano y, mientras tanto, Furiosa aprovecha la batalla para intentar volver a casa.",
+        "genero": "Accion",
+        "actores": ["Anya Taylor-Joy", "Chris Hemsworth "],
+        "trailer": "https://www.youtube.com/watch?v=S3Vx7TZ0yZw",
+        "imagen": "/assets/img/furiosa.jpg",
+        "fecha": "2024-5-23"
+    },
+
+
+
+    {
+        "titulo": "Venom: The Last Dance",
+        "descripcion": "Venom: El Último Baile título original en inglés: Venom: The Last Dance es una próxima película de superhéroes estadounidense protagonizada por el personaje de Marvel Comics Venom, producida por Columbia Pictures en asociación con Marvel, y distribuida por Sony Pictures Releasing.",
+        "genero": "Superheroes",
+        "actores": ["Tom Hardy", "Juno Temple"],
+        "trailer": "https://www.youtube.com/watch?v=__2bjWbetsA",
+        "imagen": "/assets/img/venom.jpg",
+        "fecha": "2024-10-24"
+    },
+
+
+    {
+        "titulo": "Justice League: Crisis on Infinite Earths - Part Two",
+        "descripcion": "Un ejército interminable de demonios de las sombras busca destruir todas las realidades. Los secretos de Monitor y Supergirl amenazan con destruir la última defensa de los héroes.",
+        "genero": "Animacion",
+        "actores": ["Jensen Ackles", "Kevin Conroy"],
+        "trailer": "https://www.youtube.com/watch?v=w6jtfmXziNQ",
+        "imagen": "/assets/img/justiceleague.jpg",
+        "fecha": "2024-01-9"
+    },
+
+
+
+
+    {
+        "titulo": "Moana2",
+        "descripcion": "Moana 2 es una próxima película estadounidense de animación, fantasía, acción y aventuras producida por Walt Disney Animation Studios y lanzada por Walt Disney Pictures. Es la secuela de la película Moana. La película está dirigida por David G. Derrick Jr. en su debut como director.",
+        "genero": "Animacion",
+        "actores": ["Dywayne Johnson", "Auli Cravalho"],
+        "trailer": "https://www.youtube.com/watch?v=oG_lt31kFfc",
+        "imagen": "/assets/img/moana2.jpg",
+        "fecha": "2024-11-27"
+    },
+
+
+
+
+    {
+        "titulo": "Mufasa: el rey león",
+        "descripcion": "Mufasa: El Rey León es una próxima película estadounidense dirigida por Barry Jenkins, a partir de un guion escrito por Jeff Nathanson.",
+        "genero": "Aventura",
+        "actores": ["Aaron Pierre", "Blue Ivy"],
+        "trailer": "https://www.youtube.com/watch?v=GWTeGrr7yF0",
+        "imagen": "/assets/img/mufasa.jpeg",
+        "fecha": "2024-12-20"
+    },
+
+
+
+
+
+
+    {
+        "titulo": "Tarot de la muerte",
+        "descripcion": "Un grupo de amigos, compañeros universitarios, utiliza sin respetar las normas una baraja de tarot que hallaron. Más tarde, uno tras otro se van encontrando con representaciones monstruosas de los arquetipos del tarot encarnadas para asesinarlos.",
+        "genero": "Terror",
+        "actores": ["Jacob Batalon", "Larsen Thompson 4"],
+        "trailer": "https://www.youtube.com/watch?v=tLttLNQLq6o",
+        "imagen": "/assets/img/tarot.jpg",
+        "fecha": "2024-05-3"
+    },
+
+
+
+
+
+
+    {
+        "titulo": "A través de tu mirada",
+        "descripcion": "Raquel y Ares mantienen una relación a distancia. Cuando se reencuentran durante el verano en los paisajes de la Costa Brava con sus amigos, ambos comienzan a preguntarse si su relación resistirá el paso del tiempo.",
+        "genero": "Romance",
+        "actores": ["Clara Galle", "Hugo Arbues"],
+        "trailer": "https://www.youtube.com/watch?v=AI3r_sUe2iI",
+        "imagen": "/assets/img/mirada.jpg",
+        "fecha": "2023-02-23"
+    },
+
+
+
+
+
+
+    {
+        "titulo": "Un lugar en silencio: Día uno ",
+        "descripcion": "Una mujer trata de sobrevivir durante un ataque alienígena en la ciudad de Nueva York. Tras unirse a otro grupo de supervivientes, el grupo se da cuenta de que deben mantenerse totalmente en silencio, dado que los cazan cuando emiten ruidos.",
+        "genero": "Terror",
+        "actores": ["Joseph Quinn", "Lupita Nyong`  "],
+        "trailer": "https://www.youtube.com/watch?v=qmeP5CDxMpw",
+        "imagen": "/assets/img/silencio.webp",
+        "fecha": "2024-06-27"
+    },
+
+
+
+
+
+
+    {
+        "titulo": "Mi villano favorito 4 ",
+        "descripcion": "Despicable Me 4 es una película de comedia animada estadounidense producida por Illumination y distribuida por Universal Pictures. Sirve como secuela de Despicable Me 3, la cuarta entrega principal y la sexta entrega en general de la franquicia.",
+        "genero": "Animacion",
+        "actores": ["William Ferrell", "Joey King"],
+        "trailer": "https://www.youtube.com/watch?v=FI4xFqXL5ww",
+        "imagen": "/assets/img/villanofav.jpg",
+        "fecha": "2024-07-03"
+    },
+
+
+
+
+    {
+        "titulo": "Beetlejuice 2",
+        "descripcion": "Beetlejuice Beetlejuice es una próxima película de comedia de terror y fantasía estadounidense de 2024, dirigida por Tim Burton, a partir de un guion de Alfred Gough y Miles Millar, basado en una historia de Gough, Millar, y Seth Grahame-Smith.",
+        "genero": "Terror",
+        "actores": ["Michael Keaton", "Jenna Ortega"],
+        "trailer": "https://www.youtube.com/watch?v=cP5hEvba3Xg",
+        "imagen": "/assets/img/beetlejuice.webp",
+        "fecha": "2024-09-06"
+    },
+
+
+
+
+
+    {
+        "titulo": "Joker: Folie à Deux ",
+        "descripcion": "Joker: Folie à Deux es una próxima película musical estadounidense dirigida por Todd Phillips.",
+        "genero": "Musical",
+        "actores": ["Joaquin Phoenix ", "Lady Gaga"],
+        "trailer": "https://www.youtube.com/watch?v=01UXuz00UkI",
+        "imagen": "/assets/img/joker.jpeg",
+        "fecha": "2024-10-04"
+    },
+
+    {
+        "titulo": "Blue Lock La Pelicula. Episodio Nagi ",
+        "descripcion": "Nagi Seishiro, estudiante de segundo año de preparatoria, en su día a día. Eso fue hasta que Mikage Reo, un compañero que soñaba con ganar la Copa del Mundo, descubrió la habilidad oculta de Nagi y le animó a jugar al fútbol y compartir su extraordinario talento. Un día recibe una invitación para el misterioso Proyecto BLUE LOCK.",
+        "genero": "Animacion",
+        "actores": ["Hiroshi Kamiya", "Yūma Uchida "],
+        "trailer": "https://www.youtube.com/watch?v=Fv6S3u88md8",
+        "imagen": "/assets/img/bluelock.jpg",
+        "fecha": "2024-04-19"
+    },
+
+    {
+        "titulo": "Profesión peligro ",
+        "descripcion": "El doble de acción Colt Seavers sufre una lesión y abandona la profesión, pero regresa para participar en una película que dirigirá la mujer de la que está enamorado. Todo se complica cuando la estrella del filme, en deuda con narcos, desaparece.",
+        "genero": "Accion",
+        "actores": ["Ryan Gosling", "Emily Blunt"],
+        "trailer": "https://www.youtube.com/watch?v=j7jPnwVGdZ8",
+        "imagen": "/assets/img/fallguy.jpg",
+        "fecha": "2024-05-03"
+    },
+
+
+    {
+        "titulo": "Bad Boys 4 ",
+        "descripcion": "Los agentes Mike Lowrey y Marcus Burnett intentan limpiar la reputación de su jefe, a quien han acusado de trabajar para un cartel de narcotraficantes.",
+        "genero": "Accion",
+        "actores": ["Will Smith", "Martin Lawrence"],
+        "trailer": "https://www.youtube.com/watch?v=hRFY_Fesa9Q",
+        "imagen": "/assets/img/badboys.webp",
+        "fecha": "2024-06-07"
+    },
+
+
+
+    {
+        "titulo": "Un detective suelto en Hollywood 4 ",
+        "descripcion": "Cuando la vida de su hija se ve amenazada, el bromista detective Axel Foley se une a un nuevo socio y algunos viejos amigos para aumentar la presión sobre una conspiración.",
+        "genero": "Comedia",
+        "actores": ["Eddie Murphy", "Judge Reinhold"],
+        "trailer": "https://www.youtube.com/watch?v=sG10Xid6f8U",
+        "imagen": "/assets/img/detective.webp",
+        "fecha": "2024-07-04"
+    },
+
+
+    {
+        "titulo": "Pelicula 2",
+        "descripcion": "Descripción de la película 2.",
+        "genero": "Documental",
+        "actores": ["Actor 3", "Actor 4"],
+        "trailer": "https://www.youtube.com/watch?v=trailer2",
+        "imagen": "ruta_imagen2.jpg",
+        "fecha": "2023-07-11"
+    },
+
+
+    {
+        "titulo": "Pelicula 2",
+        "descripcion": "Descripción de la película 2.",
+        "genero": "Documental",
+        "actores": ["Actor 3", "Actor 4"],
+        "trailer": "https://www.youtube.com/watch?v=trailer2",
+        "imagen": "ruta_imagen2.jpg",
+        "fecha": "2023-07-11"
+    },
+
+
+    {
+        "titulo": "Pelicula 2",
+        "descripcion": "Descripción de la película 2.",
+        "genero": "Documental",
+        "actores": ["Actor 3", "Actor 4"],
+        "trailer": "https://www.youtube.com/watch?v=trailer2",
+        "imagen": "ruta_imagen2.jpg",
+        "fecha": "2023-07-11"
+    },
+
+
+    {
+        "titulo": "Pelicula 2",
+        "descripcion": "Descripción de la película 2.",
+        "genero": "Documental",
+        "actores": ["Actor 3", "Actor 4"],
+        "trailer": "https://www.youtube.com/watch?v=trailer2",
+        "imagen": "ruta_imagen2.jpg",
+        "fecha": "2023-07-11"
+    },
+
+
+    {
+        "titulo": "Pelicula 2",
+        "descripcion": "Descripción de la película 2.",
+        "genero": "Documental",
+        "actores": ["Actor 3", "Actor 4"],
+        "trailer": "https://www.youtube.com/watch?v=trailer2",
+        "imagen": "ruta_imagen2.jpg",
+        "fecha": "2023-07-11"
+    },
+
+
+
+    {
+        "titulo": "Pelicula 2",
+        "descripcion": "Descripción de la película 2.",
+        "genero": "Documental",
+        "actores": ["Actor 3", "Actor 4"],
+        "trailer": "https://www.youtube.com/watch?v=trailer2",
+        "imagen": "ruta_imagen2.jpg",
+        "fecha": "2023-07-11"
+    },
+
+
+
+    {
+        "titulo": "Pelicula 2",
+        "descripcion": "Descripción de la película 2.",
+        "genero": "Documental",
+        "actores": ["Actor 3", "Actor 4"],
+        "trailer": "https://www.youtube.com/watch?v=trailer2",
+        "imagen": "ruta_imagen2.jpg",
+        "fecha": "2023-07-11"
+    },
+
+
+    {
+        "titulo": "Pelicula 2",
+        "descripcion": "Descripción de la película 2.",
+        "genero": "Documental",
+        "actores": ["Actor 3", "Actor 4"],
+        "trailer": "https://www.youtube.com/watch?v=trailer2",
+        "imagen": "ruta_imagen2.jpg",
+        "fecha": "2023-07-11"
+    },
+
+
+    {
+        "titulo": "Pelicula 2",
+        "descripcion": "Descripción de la película 2.",
+        "genero": "Documental",
+        "actores": ["Actor 3", "Actor 4"],
+        "trailer": "https://www.youtube.com/watch?v=trailer2",
+        "imagen": "ruta_imagen2.jpg",
+        "fecha": "2023-07-11"
+    },
+
+
+
+    {
+        "titulo": "Pelicula 2",
+        "descripcion": "Descripción de la película 2.",
+        "genero": "Documental",
+        "actores": ["Actor 3", "Actor 4"],
+        "trailer": "https://www.youtube.com/watch?v=trailer2",
+        "imagen": "ruta_imagen2.jpg",
+        "fecha": "2023-07-11"
+    },
+
+
+    {
+        "titulo": "Pelicula 2",
+        "descripcion": "Descripción de la película 2.",
+        "genero": "Documental",
+        "actores": ["Actor 3", "Actor 4"],
+        "trailer": "https://www.youtube.com/watch?v=trailer2",
+        "imagen": "ruta_imagen2.jpg",
+        "fecha": "2023-07-11"
+    }
+
+
+    
+
+
+]

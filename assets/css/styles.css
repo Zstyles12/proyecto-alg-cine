@@ -69,3 +69,13 @@ body.dark-mode {
 .dark-mode .btn-link:hover {
     color: #0056b3;
 }
+
+
+
+.card {
+    margin-bottom: 20px;
+}
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
