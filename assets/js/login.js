@@ -86,8 +86,6 @@ document.getElementById('loginForm')?.addEventListener('submit', function (e) {
     }
 });
 
- 
-
 
 
 document.addEventListener('DOMContentLoaded', function () {

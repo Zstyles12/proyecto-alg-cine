@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartelera de Cine</title>
+    <title>Admin</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.1/css/buttons.dataTables.min.css">
 </head>
 <body>
     <div id="particles-js-left" class="particles-js"></div>
     <div id="particles-js-right" class="particles-js"></div>   
+
 
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -52,39 +55,93 @@
                     <li class="nav-item">
                         <a class="nav-link" href="calendar.html">Calendario</a>
                     </li>
-                    <!-- Icono de notificaciones -->
-                    <div class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-bell"></i>
-                            <span class="badge bg-danger">3</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown">
-                            <li><a class="dropdown-item" href="#">DeadPool & Wolverine Se estrena en tan solo dias, No te lo pierdas!! 1</a></li>
-                            <li><a class="dropdown-item" href="#">Intensamente 2 Gran exito en Taquilla!!!</a></li>
-                            <li><a class="dropdown-item" href="#">La tan esperada pelicula de Wicked estrena en tan solo meses!</a></li>
-                        </ul>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" id="busqueda" placeholder="Buscar..." aria-label="Buscar">
                 </form>
                 <input type="checkbox" id="darkModeSwitch" class="btn btn-outline-light" />
                 <label for="darkModeSwitch" class="btn btn-outline-light">Modo Oscuro</label>
-                
-                
-                
-                </div>
             </div>
         </div>
     </nav>
 
     <div id="main-content" class="container mt-5">
-        <div id="alertas"></div>
-        <div class="row" id="peliculas"></div>
+        <h1>C.R.U.D</h1>
+        
+
+        <!-- Botón para añadir nueva película -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#movieModal">Añadir Película</button>
+
+        <!-- Tabla de DataTables -->
+        <table id="moviesTable" class="display nowrap" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Género</th>
+                    <th>Duración</th>
+                    <th>Fecha de Estreno</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas de ejemplo, reemplazar con datos dinámicos -->
+                <tr>
+                    <td>Pelicula ejemplo</td>
+                    <td>Acción</td>
+                    <td>120 min</td>
+                    <td>2024-01-01</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm edit-btn" data-id="1">Editar</button>
+                        <button class="btn btn-danger btn-sm delete-btn" data-id="1">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    
+
+    <!-- Modal para añadir/editar película -->
+    <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="movieModalLabel">Añadir Película</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="movieForm">
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Título</label>
+                            <input type="text" class="form-control" id="title" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="genre" class="form-label">Género</label>
+                            <input type="text" class="form-control" id="genre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="duration" class="form-label">Duración</label>
+                            <input type="text" class="form-control" id="duration" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="releaseDate" class="form-label">Fecha de Estreno</label>
+                            <input type="date" class="form-control" id="releaseDate" required>
+                        </div>
+                        <input type="hidden" id="movieId">
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="assets/js/admin.js"></script>
 </body>
 </html>

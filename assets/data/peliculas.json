@@ -3,7 +3,7 @@
     {
         "titulo": "The Eras Tour Taylor`s version",
         "descripcion": "La estrella del pop, Taylor Swift, ofrece un concierto inolvidable. La artista interpreta canciones de todas las épocas de su carrera.",
-        "genero": "Documental",
+        "genero": "Conciertos",
         "actores": ["Taylor Swift"],
         "trailer": "https://www.youtube.com/watch?v=5UBl0rLEl0w",
         "imagen": "/assets/img/ErasTourTV.webp",
@@ -278,7 +278,7 @@
     {
         "titulo": "Sonic 3, la película ",
         "descripcion": "Sonic 3, La película ​​ es una próxima película de comedia de acción y aventuras basada en la serie de videojuegos publicada por Sega, la secuela de Sonic, la película y Sonic 2, la película.",
-        "genero": "Documental",
+        "genero": "Animacion",
         "actores": ["Keanu Reeves", "Jim Carrey"],
         "trailer": "https://www.youtube.com/watch?v=6BRTynghfp0",
         "imagen": "/assets/img/sonic.jpg",
