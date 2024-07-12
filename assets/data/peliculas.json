@@ -55,7 +55,7 @@
     {
         "titulo": "Furiosa: de la saga Mad Max",
         "descripcion": "La joven Furiosa es arrebatada del Paraje Verde de las Muchas Madres por una horda de motociclistas. El señor de la guerra que dirige su grupo se enfrenta a otro tirano y, mientras tanto, Furiosa aprovecha la batalla para intentar volver a casa.",
-        "genero": "Accion",
+        "genero": "Ciencia Ficcion  ",
         "actores": ["Anya Taylor-Joy", "Chris Hemsworth "],
         "trailer": "https://www.youtube.com/watch?v=S3Vx7TZ0yZw",
         "imagen": "/assets/img/furiosa.jpg",
@@ -289,7 +289,7 @@
     {
         "titulo": "Borderlands",
         "descripcion": "Borderlands es una próxima película estadounidense de comedia de acción y ciencia ficción dirigida por Eli Roth, quien coescribió el guion con Joe Crombie, basada en la serie de videojuegos del mismo nombre desarrollada por Gearbox Software y publicada por 2K.",
-        "genero": "Accion",
+        "genero": "Ciencia Ficcion  ",
         "actores": ["Kevin Hart", "Ariana Greenblatt"],
         "trailer": "https://www.youtube.com/watch?v=Zusyjsct4WA",
         "imagen": "/assets/img/borderlands.jpg",
