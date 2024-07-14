@@ -9,6 +9,62 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.1/css/buttons.dataTables.min.css">
+    <style>
+        /* Estilo adicional para el contenedor principal */
+        .main-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Estilo para el botón de añadir película */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+        /* Estilo para la tabla */
+        .dataTables_wrapper .dataTables_filter {
+            float: right;
+            text-align: right;
+        }
+
+        .dataTables_wrapper .dataTables_length {
+            float: left;
+        }
+
+        .dataTables_wrapper .dataTables_info {
+            float: left;
+        }
+
+        .dataTables_wrapper .dataTables_paginate {
+            float: right;
+            text-align: right;
+        }
+
+        /* Estilo adicional para el modal */
+        .modal-header {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .modal-footer .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .modal-footer .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+    </style>
 </head>
 <body>
     <div id="particles-js-left" class="particles-js"></div>
@@ -25,18 +81,14 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="home.html">Inicio</a>
+                        <a class="nav-link" href="index-admin.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Cerrar cesion</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="admin.html">Admin</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="acercademi.html">Acerca de Mí</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categorías
-                        </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Accion')">Acción</a></li>
                             <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Animacion')">Animación</a></li>
@@ -52,25 +104,21 @@
                             <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Terror')">Terror</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="calendar.html">Calendario</a>
-                    </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" id="busqueda" placeholder="Buscar..." aria-label="Buscar">
-                </form>
+        
                 <input type="checkbox" id="darkModeSwitch" class="btn btn-outline-light" />
                 <label for="darkModeSwitch" class="btn btn-outline-light">Modo Oscuro</label>
             </div>
         </div>
     </nav>
 
-    <div id="main-content" class="container mt-5">
-        <h1>C.R.U.D</h1>
-        
+    <div class="container main-container mt-5">
+        <h1 class="text-center">C.R.U.D</h1>
 
         <!-- Botón para añadir nueva película -->
-        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#movieModal">Añadir Película</button>
+        <div class="d-flex justify-content-end mb-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#movieModal">Añadir Película</button>
+        </div>
 
         <!-- Tabla de DataTables -->
         <table id="moviesTable" class="display nowrap" style="width:100%">
@@ -89,7 +137,7 @@
                     <td>Intensamente 2</td>
                     <td>Animacion</td>
                     <td>96 min</td>
-                    <td>2024-6-14</td>
+                    <td>2024-06-14</td>
                     <td>
                         <button class="btn btn-warning btn-sm edit-btn" data-id="1">Editar</button>
                         <button class="btn btn-danger btn-sm delete-btn" data-id="1">Eliminar</button>

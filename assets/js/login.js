@@ -79,7 +79,7 @@ document.getElementById('loginForm')?.addEventListener('submit', function (e) {
     if (storedUser.email === email && storedUser.password === password) {
         localStorage.setItem('loggedIn', 'true');
         Swal.fire('Inicio de sesión exitoso', '', 'success').then(() => {
-            window.location.href = 'home.html';
+            window.location.href = 'index-admin.html';
         });
     } else {
         Swal.fire('Error', 'Correo o contraseña incorrectos.', 'error');

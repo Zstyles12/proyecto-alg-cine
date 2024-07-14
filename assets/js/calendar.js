@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const darkModeSwitch = document.getElementById('darkModeSwitch');
     const body = document.body;
 
-    // Check local storage for dark mode preference
     if (localStorage.getItem('darkMode') === 'enabled') {
         body.classList.add('dark-mode');
         darkModeSwitch.checked = true;
@@ -11,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
         darkModeSwitch.checked = false;
     }
 
-    // Toggle dark mode and save preference to local storage
     darkModeSwitch.addEventListener('change', function() {
         if (darkModeSwitch.checked) {
             body.classList.add('dark-mode');
@@ -48,10 +46,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const calendar = new FullCalendar.Calendar(calendarEl, {
             initialView: 'dayGridMonth',
             events: peliculas.map(pelicula => ({
-                title: pelicula.titulo,
+                title: `${pelicula.titulo} - ${pelicula.horario}`,
                 start: pelicula.fecha,
                 extendedProps: {
-                    genero: pelicula.genero
+                    genero: pelicula.genero,
+                    horario: pelicula.horario
                 }
             })),
             headerToolbar: {
@@ -81,13 +80,12 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('dark-mode', isDarkMode);
     }
 
-    // Load dark mode setting
     if (localStorage.getItem('dark-mode') === 'true') {
         document.body.classList.add('dark-mode');
     }
 
     document.getElementById('darkModeSwitch').addEventListener('click', toggleDarkMode);
-    // Configuración de ParticleJS para el lado izquierdo
+
     particlesJS('particles-js-left', {
         "particles": {
             "number": {
@@ -100,11 +98,9 @@ document.addEventListener('DOMContentLoaded', function () {
             "color": {
                 "value": "#2d24bb"
             },
-            // Configuraciones adicionales de partículas según necesites
         }
     });
 
-    // Configuración de ParticleJS para el lado derecho
     particlesJS('particles-js-right', {
         "particles": {
             "number": {
@@ -117,7 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
             "color": {
                 "value": "#2d24bb"
             },
-            // Configuraciones adicionales de partículas según necesites
         }
     });
 });

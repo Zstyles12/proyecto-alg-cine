@@ -64,18 +64,18 @@ document.addEventListener('DOMContentLoaded', function () {
         peliculas.forEach(pelicula => {
             peliculasHTML += `
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="${pelicula.imagen}" class="card-img-top" alt="${pelicula.titulo}">
-                        <div class="card-body">
-                            <h5 class="card-title">${pelicula.titulo}</h5>
-                            <p class="card-text">${pelicula.descripcion}</p>
-                            <p class="card-text">${pelicula.fecha}</p>
-                            <p class="card-text">${pelicula.actores}</p>
-                            <p class="card-text">${pelicula.genero}</p>
-                            <a href="${pelicula.trailer}" class="btn btn-primary" target="_blank">Ver Trailer</a>
-                        </div>
-                    </div>
-                </div>
+    <div class="card">
+        <img src="${pelicula.imagen}" class="card-img-top" alt="${pelicula.titulo}">
+        <div class="card-body">
+            <h5 class="card-title">${pelicula.titulo}</h5>
+            <p class="card-text">${pelicula.descripcion}</p>
+            <p class="card-text">${pelicula.fecha}</p>
+            <p class="card-text">${pelicula.actores}</p>
+            <p class="card-text">${pelicula.genero}</p>
+            <a href="${pelicula.trailer}" class="btn btn-primary" target="_blank">Ver Trailer</a>
+        </div>
+    </div>
+</div>  
             `;
         });
         const peliculasElement = document.getElementById('peliculas');
@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return pelicula.titulo.toLowerCase().includes(busqueda) || pelicula.actores.some(actor => actor.toLowerCase().includes(busqueda));
         });
         mostrarPeliculas(peliculasFiltradas);
+        
     }
 
     window.filtrarCategoria = function(categoria) {

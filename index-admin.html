@@ -3,33 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendario de Estrenos</title>
+    <title>Cartelera de Cine</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/main.min.css">
 </head>
 <body>
     <div id="particles-js-left" class="particles-js"></div>
     <div id="particles-js-right" class="particles-js"></div>   
 
+    <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="home.html">Cartelera de Cine</a>
+            <a class="navbar-brand" href="index-admin.html">Cartelera de Cine</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="home.html">Inicio</a>
+                        <a class="nav-link" href="index-admin.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Iniciar Sesion</a>
+                        <a class="nav-link" href="home.html">Cerrar cesion</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="acercademi.html">Acerca de Mí</a>
+                        <a class="nav-link" href="admin.html">Admin</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorías
+                        </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Accion')">Acción</a></li>
                             <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Animacion')">Animación</a></li>
@@ -45,21 +49,27 @@
                             <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Terror')">Terror</a></li>
                         </ul>
                     </li>
-                </ul>
-
-                <button class="btn btn-outline-light" id="darkModeSwitch" type="button">Modo Oscuro</button>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" id="busqueda" placeholder="Buscar..." aria-label="Buscar">
+                </form>
+                <input type="checkbox" id="darkModeSwitch" class="btn btn-outline-light" />
+                <label for="darkModeSwitch" class="btn btn-outline-light">Modo Oscuro</label>
+                
+                
+                
+                </div>
             </div>
         </div>
     </nav>
 
-    <div id="calendar-container" class="container mt-5">
-        <div id="calendar"></div>
+    <div id="main-content" class="container mt-5">
+        <div id="alertas"></div>
+        <div class="row" id="peliculas"></div>
     </div>
     
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="assets/js/calendar.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -7,7 +7,9 @@
         "actores": ["Taylor Swift"],
         "trailer": "https://www.youtube.com/watch?v=5UBl0rLEl0w",
         "imagen": "/assets/img/ErasTourTV.webp",
-        "fecha": "2024-10-13"
+        "fecha": "2024-10-13",
+        "horario": "14:00"
+        
         
     },
   
@@ -18,7 +20,8 @@
         "actores": ["Ryan Reynolds", "Hugh Jackman"],
         "trailer": "https://www.youtube.com/watch?v=73_1biulkYk",
         "imagen": "/assets/img/deadpool.jpg",
-        "fecha": "2024-07-25"
+        "fecha": "2024-07-25",
+        "horario": "18:00"
     },
 
     {
@@ -28,7 +31,8 @@
         "actores": [" Amy Poehler ", "Phylis Smith"],
         "trailer": "https://www.youtube.com/watch?v=xiC2iXTXHxw",
         "imagen": "/assets/img/intensamente2.webp",
-        "fecha": "2024-06-14"
+        "fecha": "2024-06-14",
+        "horario": "14:00"
     },
 
     {
@@ -168,7 +172,8 @@
         "actores": ["William Ferrell", "Joey King"],
         "trailer": "https://www.youtube.com/watch?v=FI4xFqXL5ww",
         "imagen": "/assets/img/villanofav.jpg",
-        "fecha": "2024-07-03"
+        "fecha": "2024-07-03",
+        "horario": "14:00"
     },
 
 
@@ -226,7 +231,8 @@
         "actores": ["Will Smith", "Martin Lawrence"],
         "trailer": "https://www.youtube.com/watch?v=hRFY_Fesa9Q",
         "imagen": "/assets/img/badboys.webp",
-        "fecha": "2024-06-07"
+        "fecha": "2024-06-07",
+        "horario": "18:00"
     },
 
 
@@ -238,7 +244,8 @@
         "actores": ["Eddie Murphy", "Judge Reinhold"],
         "trailer": "https://www.youtube.com/watch?v=sG10Xid6f8U",
         "imagen": "/assets/img/detective.webp",
-        "fecha": "2024-07-04"
+        "fecha": "2024-07-04",
+        "horario": "16:00"
     },
 
 
@@ -317,7 +324,8 @@
         "actores": ["Jisoo, Jennie, Rosé, Lisa"],
         "trailer": "https://www.youtube.com/watch?v=nBVrh2HRdHQ",
         "imagen": "/assets/img/blackpink.webp",
-        "fecha": "2024-07-31"
+        "fecha": "2024-07-31",
+        "horario": "12:00"
     },
 
 
@@ -328,7 +336,8 @@
         "actores": ["Glen Powell", "Anthony Ramos"],
         "trailer": "https://www.youtube.com/watch?v=kFQPaJnUyq8",
         "imagen": "/assets/img/tornados.jpg",
-        "fecha": "2024-07-11"
+        "fecha": "2024-07-11",
+        "horario": "14:00"
     },
 
 
@@ -339,7 +348,8 @@
         "actores": ["Aiden Howard", "Lauren Jackson "],
         "trailer": "https://www.youtube.com/watch?v=v98lU7v0XLk",
         "imagen": "/assets/img/deepweb.jpeg",
-        "fecha": "2024-07-11"
+        "fecha": "2024-07-11",
+        "horario": "20:00"
     },
 
 
@@ -351,7 +361,8 @@
         "actores": ["Scarlett Johansson", "Channing Tatum"],
         "trailer": "https://www.youtube.com/watch?v=XhaFkc0ICMU",
         "imagen": "/assets/img/luna.jpg",
-        "fecha": "2024-07-18"
+        "fecha": "2024-07-18",
+        "horario": "15:00"
     },
 
 

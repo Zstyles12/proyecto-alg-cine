@@ -1,4 +1,4 @@
-/* General */
+/* Estilos generales que se aplican a todos los tamaños de pantalla */
 body {
     font-family: cursive;
     background-color: #f8f9fa;
@@ -20,39 +20,25 @@ h1.dark-mode {
     color: #e0e0e0;
 }
 
-.dark-mode .modal-content {
-    background-color: #585757;
+.dark-mode .modal-content,
+.dark-mode .dropdown-menu,
+.dark-mode .card,
+.dark-mode .fc,
+.dark-mode .profile-card {
+    background-color: #1e1e1e;
     color: #ffffff;
 }
 
-.dark-mode .dropdown-menu {
+.dark-mode .modal-header,
+.dark-mode .modal-body,
+.dark-mode .modal-footer,
+.dark-mode .fc .fc-daygrid-day,
+.dark-mode .fc .fc-button,
+.dark-mode .navbar,
+.dark-mode .form-control,
+.dark-mode .btn-outline-light {
     background-color: #333333;
     color: #ffffff;
-}
-
-.dark-mode .card {
-    background-color: #1e1e1e;
-    color: #ffffff;
-}
-
-.dark-mode .btn-primary {
-    background-color: #1a73e8;
-    border-color: #1a73e8;
-}
-
-.dark-mode .btn-primary:hover {
-    background-color: #185abc;
-    border-color: #185abc;
-}
-
-.dark-mode .fc {
-    background-color: #1e1e1e;
-    color: #ffffff;
-}
-
-.dark-mode .fc .fc-daygrid-day {
-    background-color: #2c2c2c;
-    border-color: #444444;
 }
 
 .dark-mode .fc .fc-daygrid-day-number {
@@ -65,65 +51,10 @@ h1.dark-mode {
     color: #ffffff;
 }
 
-.dark-mode .fc .fc-toolbar-title {
-    color: #ffffff;
-}
-
-.dark-mode .fc .fc-button {
-    background-color: #444444;
-    border-color: #666666;
-    color: #ffffff;
-}
-
-.dark-mode .navbar {
-    background-color: #1f1f1f;
-}
-
+.dark-mode .fc .fc-toolbar-title,
 .dark-mode .navbar-dark .navbar-brand,
 .dark-mode .navbar-dark .nav-link {
     color: #e0e0e0;
-}
-
-.dark-mode .form-control {
-    background-color: #333;
-    color: #e0e0e0;
-    border: 1px solid #444;
-}
-
-.dark-mode .btn-outline-light {
-    border-color: #e0e0e0;
-    color: #e0e0e0;
-}
-
-.dark-mode .profile-card {
-    background-color: #333333;
-    color: #ffffff;
-}
-.dark-mode .modal-content {
-    background-color: #333333;
-    color: #ffffff;
-}
-
-.dark-mode .modal-header {
-    background-color: #444444;
-}
-
-.dark-mode .modal-body {
-    background-color: #444444;
-}
-
-.dark-mode .modal-footer {
-    background-color: #444444;
-}
-
-.dark-mode .modal-footer .btn-primary {
-    background-color: #1a73e8;
-    border-color: #1a73e8;
-}
-
-.dark-mode .modal-footer .btn-secondary {
-    background-color: #5a6268;
-    border-color: #5a6268;
 }
 
 /* Navbar */
@@ -202,10 +133,6 @@ h1.dark-mode {
     right: 0;
 }
 
-#main-content {
-    margin: 0 15%; /* Ajusta este valor según el ancho deseado */
-}
-
 /* Cards */
 .card {
     margin-bottom: 20px;
@@ -253,6 +180,16 @@ h1.dark-mode {
     overflow-y: auto;
     width: 300px;
     right: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0;
+    max-height: 0;
+}
+
+#notificationsDropdown.show .dropdown-menu {
+    opacity: 1;
+    max-height: 300px;
 }
 
 #notificationsDropdown .dropdown-menu::before {
@@ -265,25 +202,73 @@ h1.dark-mode {
     border-color: transparent transparent #fff transparent;
 }
 
+#notificationsDropdown .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#notificationsDropdown .dropdown-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+#notificationsDropdown .dropdown-item i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+#notificationsDropdown .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Caja de notificaciones */
+#notificationsDropdown .dropdown-menu {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#notificationsDropdown .dropdown-item {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#notificationsDropdown .dropdown-item:last-child {
+    border-bottom: none;
+}
+
 /* Container */
 .container {
     margin-top: 80px; /* Espacio adicional para evitar que el contenido se solape con la navbar */
 }
-.container {
-    margin-top: 80px; /* Espacio adicional para evitar que el contenido se solape con la navbar */
-}
 
-.profile-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+/* Media queries para ajustes específicos en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+    /* Ajustes adicionales específicos para dispositivos móviles */
+    .profile-card img {
+        width: 150px;
+        height: 150px;
+    }
 
-.profile-card img {
-    width: 150px;
-    height: 150px;
+    .card img {
+        height: auto;
+    }
 }
-
 .card1 {
     background-color: white;
     border-radius: 10px;
@@ -296,7 +281,6 @@ h1.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
-
 .card-header {
     background-color: #007bff;
     color: white;
@@ -305,52 +289,6 @@ h1.dark-mode {
 
 .card-body {
     padding: 1rem;
-}
-
-.modal-content {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.modal-header {
-    background-color: #007bff;
-    color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 1rem;
-}
-
-.modal-header .close {
-    color: white;
-    opacity: 1;
-}
-
-.modal-body {
-    padding: 2rem;
-    background-color: #f8f9fa;
-}
-
-.modal-footer {
-    background-color: #f1f1f1;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 1rem;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.modal-footer .btn {
-    margin-left: 10px;
-}
-
-.modal-footer .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.modal-footer .btn-secondary {
-    background-color: #6c757d;
-    border-color: #6c757d;
 }
 
 .particles-js {
