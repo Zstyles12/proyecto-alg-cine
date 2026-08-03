@@ -1,7 +1,12 @@
-/* Estilos generales que se aplican a todos los tamaños de pantalla */
+/* =============================================
+   home.css — Estilos globales de la cartelera
+   ============================================= */
+
+/* ---- Base ---- */
 body {
     font-family: cursive;
     background-color: #f8f9fa;
+    color: #212529;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -10,56 +15,16 @@ h1 {
     margin-bottom: 20px;
 }
 
-h1.dark-mode {
-    color: #185abc;
-}
-
-/* Dark mode */
+/* ---- Dark mode general ---- */
 .dark-mode {
     background-color: #121212;
     color: #e0e0e0;
 }
 
-.dark-mode .modal-content,
-.dark-mode .dropdown-menu,
-.dark-mode .card,
-.dark-mode .fc,
-.dark-mode .profile-card {
-    background-color: #1e1e1e;
-    color: #ffffff;
-}
-
-.dark-mode .modal-header,
-.dark-mode .modal-body,
-.dark-mode .modal-footer,
-.dark-mode .fc .fc-daygrid-day,
-.dark-mode .fc .fc-button,
-.dark-mode .navbar,
-.dark-mode .form-control,
-.dark-mode .btn-outline-light {
-    background-color: #333333;
-    color: #ffffff;
-}
-
-.dark-mode .fc .fc-daygrid-day-number {
-    color: #ffffff;
-}
-
-.dark-mode .fc .fc-event {
-    background-color: blue;
-    border-color: #555555;
-    color: #ffffff;
-}
-
-.dark-mode .fc .fc-toolbar-title,
-.dark-mode .navbar-dark .navbar-brand,
-.dark-mode .navbar-dark .nav-link {
-    color: #e0e0e0;
-}
-
-/* Navbar */
+/* ---- Navbar ---- */
 .navbar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #343a40;
 }
 
 .navbar-dark .navbar-brand,
@@ -85,7 +50,231 @@ h1.dark-mode {
     background-color: #495057;
 }
 
-/* Calendar */
+/* Botón de tema en la navbar */
+.dark-mode .navbar .btn-outline-light {
+    border-color: #adb5bd;
+    color: #ffffff;
+}
+.dark-mode .navbar .btn-outline-light:hover {
+    background-color: #adb5bd;
+    color: #121212;
+}
+.dark-mode .navbar .nav-link,
+.dark-mode .navbar .navbar-brand {
+    color: #ffffff;
+}
+
+/* Barra de búsqueda del navbar: siempre legible */
+#navbar .form-control {
+    background-color: #495057;
+    border-color: #6c757d;
+    color: #ffffff;
+}
+#navbar .form-control::placeholder {
+    color: #d7dce1;
+    opacity: 1;
+}
+#navbar .form-control:focus {
+    background-color: #495057;
+    color: #ffffff;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* ---- Notificaciones ---- */
+#notificationsDropdown {
+    position: relative;
+}
+
+#notificationsDropdown .dropdown-menu {
+    max-height: 300px;
+    overflow-y: auto;
+    width: 300px;
+    right: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#notificationsDropdown .dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+#notificationsDropdown .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#notificationsDropdown .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+#notificationsDropdown .dropdown-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+#notificationsDropdown .dropdown-item i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+#notificationsDropdown .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Notificaciones dark mode */
+.dark-mode #notificationsDropdown .dropdown-menu {
+    background-color: #1e1e1e;
+    border-color: #444;
+    color: #e0e0e0;
+}
+.dark-mode #notificationsDropdown .dropdown-menu::before {
+    border-color: transparent transparent #1e1e1e transparent;
+}
+.dark-mode #notificationsDropdown .dropdown-item {
+    color: #e0e0e0;
+    border-bottom-color: #444;
+}
+.dark-mode #notificationsDropdown .dropdown-item:hover {
+    background-color: #2a2a2a;
+}
+
+/* ---- Container ---- */
+.container {
+    margin-top: 80px;
+}
+
+/* ---- Cards (películas) ---- */
+.card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    color: #212529;
+}
+
+.card img {
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+    background-color: #000;
+}
+
+.card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
+.card-title {
+    color: #212529;
+}
+
+/* Cards dark mode */
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.dark-mode .card-title {
+    color: #ffffff;
+}
+.dark-mode .card-text {
+    color: #cccccc;
+}
+
+/* ---- Cards de perfil (acercademi) ---- */
+.card1 {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: auto;
+    color: #212529;
+}
+
+.card1-header,
+.card-header {
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+}
+
+.card1-body,
+.card-body {
+    padding: 1rem;
+}
+
+/* card1 dark mode */
+.dark-mode .card1 {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+.dark-mode .card1 .card-body,
+.dark-mode .card-body {
+    color: #e0e0e0;
+}
+.dark-mode .card1 .card-body li,
+.dark-mode .card-body li {
+    color: #cccccc;
+}
+
+/* ---- Profile Card ---- */
+.profile-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #212529;
+}
+
+.profile-card img {
+    width: 250px;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Profile card dark mode */
+.dark-mode .profile-card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/* ---- Calendario (FullCalendar) ---- */
 #calendar {
     background-color: #f0e8e8;
     border-radius: 8px;
@@ -111,202 +300,110 @@ h1.dark-mode {
     background-color: #0056b3;
 }
 
-/* Particles */
-.particles {
-    background-size: cover;
-    background-position: 50;
+/* Calendario dark mode */
+.dark-mode #calendar {
+    background-color: #1e1e1e;
 }
-
-#left-particles, #right-particles {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 30%; /* Ajusta este valor según el ancho deseado */
-    z-index: -1;
+.dark-mode .fc .fc-toolbar-title {
+    color: #e0e0e0;
 }
-
-#left-particles {
-    left: 0;
+.dark-mode .fc .fc-daygrid-day {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
 }
-
-#right-particles {
-    right: 0;
+.dark-mode .fc .fc-daygrid-day-number {
+    color: #e0e0e0;
 }
-
-/* Cards */
-.card {
-    margin-bottom: 20px;
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.card img {
-    height: 300px;
-    object-fit: cover;
-}
-
-.card-body {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-text {
-    flex-grow: 1;
-}
-
-/* Profile Card */
-.profile-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.profile-card img {
-    width: 250px;
-    height: 500px;
-}
-
-/* Notifications bell */
-#notificationsDropdown {
-    position: relative;
-}
-
-#notificationsDropdown .dropdown-menu {
-    max-height: 300px;
-    overflow-y: auto;
-    width: 300px;
-    right: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-    opacity: 0;
-    max-height: 0;
-}
-
-#notificationsDropdown.show .dropdown-menu {
-    opacity: 1;
-    max-height: 300px;
-}
-
-#notificationsDropdown .dropdown-menu::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    right: 15px;
-    border-width: 0 10px 10px 10px;
-    border-style: solid;
-    border-color: transparent transparent #fff transparent;
-}
-
-#notificationsDropdown .dropdown-item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-#notificationsDropdown .dropdown-item:hover {
-    background-color: #f8f9fa;
-    transform: translateX(5px);
-}
-
-#notificationsDropdown .dropdown-item i {
-    margin-right: 10px;
-    color: #007bff;
-}
-
-#notificationsDropdown .badge {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    border-radius: 50%;
-    padding: 5px 10px;
-    font-size: 12px;
-    font-weight: bold;
-    background-color: #dc3545;
+.dark-mode .fc .fc-button {
+    background-color: #0056b3;
+    border-color: #0056b3;
     color: #fff;
 }
-
-/* Caja de notificaciones */
-#notificationsDropdown .dropdown-menu {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
+.dark-mode .fc .fc-button:hover {
+    background-color: #007bff;
 }
-
-#notificationsDropdown .dropdown-item {
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
+.dark-mode .fc .fc-button-active {
+    background-color: #003d82 !important;
 }
-
-#notificationsDropdown .dropdown-item:last-child {
-    border-bottom: none;
-}
-
-/* Container */
-.container {
-    margin-top: 80px; /* Espacio adicional para evitar que el contenido se solape con la navbar */
-}
-
-/* Media queries para ajustes específicos en pantallas más pequeñas */
-@media (max-width: 768px) {
-    .navbar-nav .nav-link {
-        font-size: 14px;
-    }
-    /* Ajustes adicionales específicos para dispositivos móviles */
-    .profile-card img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .card img {
-        height: auto;
-    }
-}
-.card1 {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: auto;
-    width: auto;
-}
-
-.dark-mode .card1{
-    background-color: #121212;
+.dark-mode .fc .fc-event {
+    background-color: #007bff;
+    border-color: #0056b3;
     color: #ffffff;
 }
-.card-header {
-    background-color: #007bff;
-    color: white;
-    border-radius: 10px 10px 0 0;
+.dark-mode .fc .fc-toolbar {
+    color: #e0e0e0;
+}
+.dark-mode .fc .fc-scrollgrid {
+    border-color: #444;
+}
+.dark-mode .fc th {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    border-color: #444;
+}
+.dark-mode .fc td,
+.dark-mode .fc .fc-daygrid-day {
+    border-color: #444;
 }
 
-.card-body {
-    padding: 1rem;
+/* ---- Modales en modo oscuro ---- */
+.dark-mode .modal-content {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+.dark-mode .modal-header {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    border-color: #333;
+}
+.dark-mode .modal-title {
+    color: #ffffff;
+}
+.dark-mode .modal-body {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+.dark-mode .modal-footer {
+    background-color: #2b2b2b;
+    border-color: #333;
+}
+.dark-mode .modal-body .card-text,
+.dark-mode .modal-body p {
+    color: #cccccc;
 }
 
+/* ---- Particles ---- */
 .particles-js {
     position: fixed;
     top: 0;
-    height: 100vh; /* Ajusta la altura según tu diseño */
-    width: 50%; /* Ajusta el ancho según tu diseño */
-    z-index: -1; /* Para asegurarte de que estén detrás del contenido principal */
+    height: 100vh;
+    width: 50%;
+    z-index: -1;
 }
 
 #particles-js-left {
     left: 0;
-    background-color:transparent
+    background-color: transparent;
 }
 
 #particles-js-right {
     right: 0;
-    background-color: transparent
+    background-color: transparent;
+}
 
+/* ---- Media queries ---- */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 14px;
     }
-
+    .profile-card img {
+        width: 150px;
+        height: 150px;
+    }
+    .card img {
+        width: 100%;
+        height: 240px;
+        object-fit: contain;
+        object-position: center;
+    }
+}

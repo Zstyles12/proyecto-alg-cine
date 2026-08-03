@@ -1,3 +1,8 @@
+// ============================================
+// login.js — Registro, inicio de sesión y logout
+// El modo oscuro lo gestiona theme.js (assets/js/theme.js)
+// ============================================
+
 // Registro de Usuario
 document.getElementById('registerForm')?.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -40,26 +45,35 @@ document.getElementById('registerForm')?.addEventListener('submit', function (e)
         Swal.fire('Error', 'La contraseña debe tener al menos 8 caracteres, incluir un número, un carácter especial (*_/), y letras mayúsculas y minúsculas.', 'error');
         return;
     }
-
     if (password !== confirmPassword) {
         Swal.fire('Error', 'Las contraseñas no coinciden.', 'error');
         return;
     }
 
-    // Guardar usuario en LocalStorage
-    const user = {
-        cedula,
-        nombres,
-        apellidos,
-        email,
-        genero,
-        ubicacion,
-        fechaNacimiento,
-        password
-    };
-    localStorage.setItem('user', JSON.stringify(user));
-    Swal.fire('Registro exitoso', 'Ahora puedes iniciar sesión.', 'success').then(() => {
-        window.location.href = 'login.html';
+    // Guardar usuario en LocalStorage (contraseña hasheada, nunca en texto plano)
+    hashearPassword(password).then(hash => {
+        const user = {
+            cedula,
+            nombres,
+            apellidos,
+            email,
+            genero,
+            ubicacion,
+            fechaNacimiento,
+            password: hash
+        };
+
+        // Mantener múltiples usuarios registrados
+        const usuarios = JSON.parse(localStorage.getItem('cineUsuarios') || '[]');
+        if (usuarios.some(u => u.email === email)) {
+            Swal.fire('Error', 'Ya existe una cuenta con este correo.', 'error');
+            return;
+        }
+        usuarios.push(user);
+        localStorage.setItem('cineUsuarios', JSON.stringify(usuarios));
+        Swal.fire('Registro exitoso', 'Ahora puedes iniciar sesión.', 'success').then(() => {
+            window.location.href = 'login.html';
+        });
     });
 });
 
@@ -69,78 +83,38 @@ document.getElementById('loginForm')?.addEventListener('submit', function (e) {
 
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-    const storedUser = JSON.parse(localStorage.getItem('user'));
+    const usuarios = JSON.parse(localStorage.getItem('cineUsuarios') || '[]');
 
-    if (!storedUser) {
+    if (!usuarios.length) {
         Swal.fire('Error', 'No hay usuarios registrados.', 'error');
         return;
     }
 
-    if (storedUser.email === email && storedUser.password === password) {
-        localStorage.setItem('loggedIn', 'true');
-        Swal.fire('Inicio de sesión exitoso', '', 'success').then(() => {
-            window.location.href = 'index-admin.html';
-        });
-    } else {
-        Swal.fire('Error', 'Correo o contraseña incorrectos.', 'error');
-    }
-});
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    const switchMode = document.getElementById('switchMode');
-
-    
-
-   
-    const currentTheme = localStorage.getItem('theme') || 'light';
-    if (currentTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-        if (switchMode) {
-            switchMode.checked = true;
-        }
-    }
-    
-
-    if (switchMode) {
-        switchMode.addEventListener('change', function () {
-            if (this.checked) {
-                document.body.classList.add('dark-mode');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                document.body.classList.remove('dark-mode');
-                localStorage.setItem('theme', 'light');
-            }
-        });
-    }
-    // Verificar el estado guardado en localStorage
-    if (localStorage.getItem('dark-mode') === 'true') {
-        document.body.classList.add('dark-mode');
-        switchMode.checked = true;
-    } else {
-        document.body.classList.remove('dark-mode');
-        switchMode.checked = false;
-    }
-
-    // Cambiar el modo al hacer clic en el switch
-    switchMode.addEventListener('change', function() {
-        document.body.classList.toggle('dark-mode');
-        // Guardar el estado en localStorage
-        if (document.body.classList.contains('dark-mode')) {
-            localStorage.setItem('dark-mode', 'true');
+    hashearPassword(password).then(hash => {
+        const usuario = usuarios.find(u => u.email === email && u.password === hash);
+        if (usuario) {
+            localStorage.setItem('cineSesion', JSON.stringify({ email: usuario.email, nombres: usuario.nombres }));
+            Swal.fire('Inicio de sesión exitoso', `¡Bienvenido, ${usuario.nombres}!`, 'success').then(() => {
+                window.location.href = 'index-admin.html';
+            });
         } else {
-            localStorage.setItem('dark-mode', 'false');
+            Swal.fire('Error', 'Correo o contraseña incorrectos.', 'error');
         }
     });
+});
 
-   
- const logoutButton = document.getElementById('logoutButton');
- if (logoutButton) {
-     logoutButton.addEventListener('click', function () {
-         localStorage.removeItem('authenticated');
-         window.location.href = 'login.html';
-     });
- }
+// Hash SHA-256 de la contraseña
+function hashearPassword(password) {
+    return crypto.subtle.digest('SHA-256', new TextEncoder().encode(password)).then(hash => {
+        return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, '0')).join('');
+    });
+}
 
+// Cierre de sesión (botón dentro de navbar.js toca localStorage directamente;
+// este handler es el respaldo para cualquier botón .logout-btn en páginas)
+document.addEventListener('click', function (e) {
+    if (e.target.closest('#logoutButton, [data-logout]')) {
+        localStorage.removeItem('cineSesion');
+        // El navbar.js ya redirige; aquí solo limpiamos.
+    }
 });

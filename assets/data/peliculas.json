@@ -1,383 +1,434 @@
-
 [
     {
         "titulo": "The Eras Tour Taylor`s version",
         "descripcion": "La estrella del pop, Taylor Swift, ofrece un concierto inolvidable. La artista interpreta canciones de todas las épocas de su carrera.",
         "genero": "Conciertos",
-        "actores": ["Taylor Swift"],
+        "actores": [
+            "Taylor Swift"
+        ],
         "trailer": "https://www.youtube.com/watch?v=5UBl0rLEl0w",
-        "imagen": "/assets/img/ErasTourTV.webp",
+        "imagen": "assets/img/ErasTourTV.webp",
         "fecha": "2024-10-13",
-        "horario": "14:00"
-        
-        
+        "horario": "14:00",
+        "id": 1
     },
-  
     {
         "titulo": "Deadpool & Wolverine",
         "descripcion": "Wolverine se recupera de sus heridas cuando se cruza con el bocazas, Deadpool, que ha viajado en el tiempo para curarlo con la esperanza de hacerse amigos y formar un equipo para acabar con un enemigo común.",
         "genero": "Superheroes",
-        "actores": ["Ryan Reynolds", "Hugh Jackman"],
+        "actores": [
+            "Ryan Reynolds",
+            "Hugh Jackman"
+        ],
         "trailer": "https://www.youtube.com/watch?v=73_1biulkYk",
-        "imagen": "/assets/img/deadpool.jpg",
+        "imagen": "assets/img/deadpool.jpg",
         "fecha": "2024-07-25",
-        "horario": "18:00"
+        "horario": "18:00",
+        "id": 2
     },
-
     {
         "titulo": "Intensamente 2 ",
         "descripcion": " regresa a la mente de una Riley recién entrada en la adolescencia justo en el momento en que el Cuartel General está sufriendo una repentina reforma para hacerle hueco a algo totalmente inesperado: ¡Nuevas emociones! Alegría, Tristeza, Ira, Miedo y Asco, con años de impecable gestión a sus espaldas (según ellos...) no saben muy bien qué sentir cuando aparece Ansiedad. Y parece que no viene sola. ",
         "genero": "Animacion",
-        "actores": [" Amy Poehler ", "Phylis Smith"],
+        "actores": [
+            " Amy Poehler ",
+            "Phylis Smith"
+        ],
         "trailer": "https://www.youtube.com/watch?v=xiC2iXTXHxw",
-        "imagen": "/assets/img/intensamente2.webp",
+        "imagen": "assets/img/intensamente2.webp",
         "fecha": "2024-06-14",
-        "horario": "14:00"
+        "horario": "14:00",
+        "id": 3
     },
-
     {
         "titulo": "Desafiantes",
         "descripcion": "Tashi, entrenadora de tenis, ha convertido a Art, su esposo, en una de las grandes estrellas del circuito. Art, quien atraviesa una mala época, acepta jugar un torneo sin importancia, donde se enfrenta al exnovio de Tashi, su antiguo mejor amigo.",
         "genero": "Drama",
-        "actores": ["Zendaya", "Mike Faist"],
+        "actores": [
+            "Zendaya",
+            "Mike Faist"
+        ],
         "trailer": "https://www.youtube.com/watch?v=dtSZbtlhxjg",
-        "imagen": "/assets/img/desafiantes.jpg",
-        "fecha": "2024-04-24"
+        "imagen": "assets/img/desafiantes.jpg",
+        "fecha": "2024-04-24",
+        "id": 4,
+        "horario": "18:00"
     },
-
     {
         "titulo": "Wicked: parte uno",
         "descripcion": "Wicked es una próxima película épica de fantasía musical dirigida por Jon M. Chu y adaptada a la pantalla por Winnie Holzman y Stephen Schwartz de su musical de 2003 del mismo nombre, que a su vez se basa en la novela de 1995 de Gregory Maguire del mismo nombre.",
         "genero": "Fantasia",
-        "actores": ["Ariana grande", "Cynthia Erivo"],
+        "actores": [
+            "Ariana grande",
+            "Cynthia Erivo"
+        ],
         "trailer": "https://www.youtube.com/watch?v=YZy2hnJc0b8",
-        "imagen": "/assets/img/wicked.jpg",
-        "fecha": "2024-11-22"
+        "imagen": "assets/img/wicked.jpg",
+        "fecha": "2024-11-22",
+        "id": 5,
+        "horario": "18:00"
     },
-
-
     {
         "titulo": "Furiosa: de la saga Mad Max",
         "descripcion": "La joven Furiosa es arrebatada del Paraje Verde de las Muchas Madres por una horda de motociclistas. El señor de la guerra que dirige su grupo se enfrenta a otro tirano y, mientras tanto, Furiosa aprovecha la batalla para intentar volver a casa.",
-        "genero": "Ciencia Ficcion  ",
-        "actores": ["Anya Taylor-Joy", "Chris Hemsworth "],
+        "genero": "Ciencia Ficcion",
+        "actores": [
+            "Anya Taylor-Joy",
+            "Chris Hemsworth "
+        ],
         "trailer": "https://www.youtube.com/watch?v=S3Vx7TZ0yZw",
-        "imagen": "/assets/img/furiosa.jpg",
-        "fecha": "2024-5-23"
+        "imagen": "assets/img/furiosa.jpg",
+        "fecha": "2024-5-23",
+        "id": 6,
+        "horario": "18:00"
     },
-
-
-
     {
         "titulo": "Venom: The Last Dance",
         "descripcion": "Venom: El Último Baile título original en inglés: Venom: The Last Dance es una próxima película de superhéroes estadounidense protagonizada por el personaje de Marvel Comics Venom, producida por Columbia Pictures en asociación con Marvel, y distribuida por Sony Pictures Releasing.",
         "genero": "Superheroes",
-        "actores": ["Tom Hardy", "Juno Temple"],
+        "actores": [
+            "Tom Hardy",
+            "Juno Temple"
+        ],
         "trailer": "https://www.youtube.com/watch?v=__2bjWbetsA",
-        "imagen": "/assets/img/venom.jpg",
-        "fecha": "2024-10-24"
+        "imagen": "assets/img/venom.jpg",
+        "fecha": "2024-10-24",
+        "id": 7,
+        "horario": "18:00"
     },
-
-
     {
         "titulo": "Justice League: Crisis on Infinite Earths - Part Two",
         "descripcion": "Un ejército interminable de demonios de las sombras busca destruir todas las realidades. Los secretos de Monitor y Supergirl amenazan con destruir la última defensa de los héroes.",
         "genero": "Animacion",
-        "actores": ["Jensen Ackles", "Kevin Conroy"],
+        "actores": [
+            "Jensen Ackles",
+            "Kevin Conroy"
+        ],
         "trailer": "https://www.youtube.com/watch?v=w6jtfmXziNQ",
-        "imagen": "/assets/img/justiceleague.jpg",
-        "fecha": "2024-01-9"
+        "imagen": "assets/img/justiceleague.jpg",
+        "fecha": "2024-01-9",
+        "id": 8,
+        "horario": "18:00"
     },
-
-
-
-
     {
         "titulo": "Moana2",
         "descripcion": "Moana 2 es una próxima película estadounidense de animación, fantasía, acción y aventuras producida por Walt Disney Animation Studios y lanzada por Walt Disney Pictures. Es la secuela de la película Moana. La película está dirigida por David G. Derrick Jr. en su debut como director.",
         "genero": "Animacion",
-        "actores": ["Dywayne Johnson", "Auli Cravalho"],
+        "actores": [
+            "Dywayne Johnson",
+            "Auli Cravalho"
+        ],
         "trailer": "https://www.youtube.com/watch?v=oG_lt31kFfc",
-        "imagen": "/assets/img/moana2.jpg",
-        "fecha": "2024-11-27"
+        "imagen": "assets/img/moana2.jpg",
+        "fecha": "2024-11-27",
+        "id": 9,
+        "horario": "18:00"
     },
-
-
-
-
     {
         "titulo": "Mufasa: el rey león",
         "descripcion": "Mufasa: El Rey León es una próxima película estadounidense dirigida por Barry Jenkins, a partir de un guion escrito por Jeff Nathanson.",
         "genero": "Aventura",
-        "actores": ["Aaron Pierre", "Blue Ivy"],
+        "actores": [
+            "Aaron Pierre",
+            "Blue Ivy"
+        ],
         "trailer": "https://www.youtube.com/watch?v=GWTeGrr7yF0",
-        "imagen": "/assets/img/mufasa.jpeg",
-        "fecha": "2024-12-20"
+        "imagen": "assets/img/mufasa.jpeg",
+        "fecha": "2024-12-20",
+        "id": 10,
+        "horario": "18:00"
     },
-
-
-
-
-
-
     {
         "titulo": "Tarot de la muerte",
         "descripcion": "Un grupo de amigos, compañeros universitarios, utiliza sin respetar las normas una baraja de tarot que hallaron. Más tarde, uno tras otro se van encontrando con representaciones monstruosas de los arquetipos del tarot encarnadas para asesinarlos.",
         "genero": "Terror",
-        "actores": ["Jacob Batalon", "Larsen Thompson 4"],
+        "actores": [
+            "Jacob Batalon",
+            "Larsen Thompson 4"
+        ],
         "trailer": "https://www.youtube.com/watch?v=tLttLNQLq6o",
-        "imagen": "/assets/img/tarot.jpg",
-        "fecha": "2024-05-3"
+        "imagen": "assets/img/tarot.jpg",
+        "fecha": "2024-05-3",
+        "id": 11,
+        "horario": "18:00"
     },
-
-
-
-
-
-
     {
         "titulo": "A través de tu mirada",
         "descripcion": "Raquel y Ares mantienen una relación a distancia. Cuando se reencuentran durante el verano en los paisajes de la Costa Brava con sus amigos, ambos comienzan a preguntarse si su relación resistirá el paso del tiempo.",
         "genero": "Romance",
-        "actores": ["Clara Galle", "Hugo Arbues"],
+        "actores": [
+            "Clara Galle",
+            "Hugo Arbues"
+        ],
         "trailer": "https://www.youtube.com/watch?v=AI3r_sUe2iI",
-        "imagen": "/assets/img/mirada.jpg",
-        "fecha": "2023-02-23"
+        "imagen": "assets/img/mirada.jpg",
+        "fecha": "2023-02-23",
+        "id": 12,
+        "horario": "18:00"
     },
-
-
-
-
-
-
     {
         "titulo": "Un lugar en silencio: Día uno ",
         "descripcion": "Una mujer trata de sobrevivir durante un ataque alienígena en la ciudad de Nueva York. Tras unirse a otro grupo de supervivientes, el grupo se da cuenta de que deben mantenerse totalmente en silencio, dado que los cazan cuando emiten ruidos.",
         "genero": "Terror",
-        "actores": ["Joseph Quinn", "Lupita Nyong`  "],
+        "actores": [
+            "Joseph Quinn",
+            "Lupita Nyong`  "
+        ],
         "trailer": "https://www.youtube.com/watch?v=qmeP5CDxMpw",
-        "imagen": "/assets/img/silencio.webp",
-        "fecha": "2024-06-27"
+        "imagen": "assets/img/silencio.webp",
+        "fecha": "2024-06-27",
+        "id": 13,
+        "horario": "18:00"
     },
-
-
-
-
-
-
     {
         "titulo": "Mi villano favorito 4 ",
         "descripcion": "Despicable Me 4 es una película de comedia animada estadounidense producida por Illumination y distribuida por Universal Pictures. Sirve como secuela de Despicable Me 3, la cuarta entrega principal y la sexta entrega en general de la franquicia.",
         "genero": "Animacion",
-        "actores": ["William Ferrell", "Joey King"],
+        "actores": [
+            "William Ferrell",
+            "Joey King"
+        ],
         "trailer": "https://www.youtube.com/watch?v=FI4xFqXL5ww",
-        "imagen": "/assets/img/villanofav.jpg",
+        "imagen": "assets/img/villanofav.jpg",
         "fecha": "2024-07-03",
-        "horario": "14:00"
+        "horario": "14:00",
+        "id": 14
     },
-
-
-
-
     {
         "titulo": "Beetlejuice 2",
         "descripcion": "Beetlejuice Beetlejuice es una próxima película de comedia de terror y fantasía estadounidense de 2024, dirigida por Tim Burton, a partir de un guion de Alfred Gough y Miles Millar, basado en una historia de Gough, Millar, y Seth Grahame-Smith.",
         "genero": "Terror",
-        "actores": ["Michael Keaton", "Jenna Ortega"],
+        "actores": [
+            "Michael Keaton",
+            "Jenna Ortega"
+        ],
         "trailer": "https://www.youtube.com/watch?v=cP5hEvba3Xg",
-        "imagen": "/assets/img/beetlejuice.webp",
-        "fecha": "2024-09-06"
+        "imagen": "assets/img/beetlejuice.webp",
+        "fecha": "2024-09-06",
+        "id": 15,
+        "horario": "18:00"
     },
-
-
-
-
-
     {
         "titulo": "Joker: Folie à Deux ",
         "descripcion": "Joker: Folie à Deux es una próxima película musical estadounidense dirigida por Todd Phillips.",
         "genero": "Musical",
-        "actores": ["Joaquin Phoenix ", "Lady Gaga"],
+        "actores": [
+            "Joaquin Phoenix ",
+            "Lady Gaga"
+        ],
         "trailer": "https://www.youtube.com/watch?v=01UXuz00UkI",
-        "imagen": "/assets/img/joker.jpeg",
-        "fecha": "2024-10-04"
+        "imagen": "assets/img/joker.jpeg",
+        "fecha": "2024-10-04",
+        "id": 16,
+        "horario": "18:00"
     },
-
     {
         "titulo": "Blue Lock La Pelicula. Episodio Nagi ",
         "descripcion": "Nagi Seishiro, estudiante de segundo año de preparatoria, en su día a día. Eso fue hasta que Mikage Reo, un compañero que soñaba con ganar la Copa del Mundo, descubrió la habilidad oculta de Nagi y le animó a jugar al fútbol y compartir su extraordinario talento. Un día recibe una invitación para el misterioso Proyecto BLUE LOCK.",
         "genero": "Animacion",
-        "actores": ["Hiroshi Kamiya", "Yūma Uchida "],
+        "actores": [
+            "Hiroshi Kamiya",
+            "Yūma Uchida "
+        ],
         "trailer": "https://www.youtube.com/watch?v=Fv6S3u88md8",
-        "imagen": "/assets/img/bluelock.jpg",
-        "fecha": "2024-04-19"
+        "imagen": "assets/img/bluelock.jpg",
+        "fecha": "2024-04-19",
+        "id": 17,
+        "horario": "18:00"
     },
-
     {
         "titulo": "Profesión peligro ",
         "descripcion": "El doble de acción Colt Seavers sufre una lesión y abandona la profesión, pero regresa para participar en una película que dirigirá la mujer de la que está enamorado. Todo se complica cuando la estrella del filme, en deuda con narcos, desaparece.",
         "genero": "Accion",
-        "actores": ["Ryan Gosling", "Emily Blunt"],
+        "actores": [
+            "Ryan Gosling",
+            "Emily Blunt"
+        ],
         "trailer": "https://www.youtube.com/watch?v=j7jPnwVGdZ8",
-        "imagen": "/assets/img/fallguy.jpg",
-        "fecha": "2024-05-03"
+        "imagen": "assets/img/fallguy.jpg",
+        "fecha": "2024-05-03",
+        "id": 18,
+        "horario": "18:00"
     },
-
-
     {
         "titulo": "Bad Boys 4 ",
         "descripcion": "Los agentes Mike Lowrey y Marcus Burnett intentan limpiar la reputación de su jefe, a quien han acusado de trabajar para un cartel de narcotraficantes.",
         "genero": "Accion",
-        "actores": ["Will Smith", "Martin Lawrence"],
+        "actores": [
+            "Will Smith",
+            "Martin Lawrence"
+        ],
         "trailer": "https://www.youtube.com/watch?v=hRFY_Fesa9Q",
-        "imagen": "/assets/img/badboys.webp",
+        "imagen": "assets/img/badboys.webp",
         "fecha": "2024-06-07",
-        "horario": "18:00"
+        "horario": "18:00",
+        "id": 19
     },
-
-
-
     {
         "titulo": "Un detective suelto en Hollywood 4 ",
         "descripcion": "Cuando la vida de su hija se ve amenazada, el bromista detective Axel Foley se une a un nuevo socio y algunos viejos amigos para aumentar la presión sobre una conspiración.",
         "genero": "Comedia",
-        "actores": ["Eddie Murphy", "Judge Reinhold"],
+        "actores": [
+            "Eddie Murphy",
+            "Judge Reinhold"
+        ],
         "trailer": "https://www.youtube.com/watch?v=sG10Xid6f8U",
-        "imagen": "/assets/img/detective.webp",
+        "imagen": "assets/img/detective.webp",
         "fecha": "2024-07-04",
-        "horario": "16:00"
+        "horario": "16:00",
+        "id": 20
     },
-
-
     {
         "titulo": "Transformer Uno",
         "descripcion": "Transformers One es una próxima película animada de acción y ciencia ficción estadounidense basada en la línea de juguetes Transformers de Hasbro. La película está dirigida por Josh Cooley y escrita por Andrew Barrer, Gabriel Ferrari, Steve Desmond y Michael Sherman.",
-        "genero": "Ciencia Ficcion  ",
-        "actores": ["Chris Hemsworth ", "Scarlett Johansson"],
+        "genero": "Ciencia Ficcion",
+        "actores": [
+            "Chris Hemsworth ",
+            "Scarlett Johansson"
+        ],
         "trailer": "https://www.youtube.com/watch?v=sj8ANC-d-Y0",
-        "imagen": "/assets/img/transformers.webp",
-        "fecha": "2024-09-12"
+        "imagen": "assets/img/transformers.webp",
+        "fecha": "2024-09-12",
+        "id": 21,
+        "horario": "18:00"
     },
-
-
     {
         "titulo": "No hables con extraños",
         "descripcion": "No hables con extraños es una próxima película estadounidense de suspenso y terror psicológico escrita y dirigida por James Watkins.Es una nueva versión de la película danesa Gæsterne de 2022. La película está protagonizada por James McAvoy, Mackenzie Davis y Scoot McNairy.",
         "genero": "Terror",
-        "actores": ["James McAvoy", "Mackenzie Davies"],
+        "actores": [
+            "James McAvoy",
+            "Mackenzie Davies"
+        ],
         "trailer": "https://www.youtube.com/watch?v=MMd0xkGVPXw",
-        "imagen": "/assets/img/nohables.webp",
-        "fecha": "2024-09-12"
+        "imagen": "assets/img/nohables.webp",
+        "fecha": "2024-09-12",
+        "id": 22,
+        "horario": "18:00"
     },
-
-
     {
         "titulo": "Kraven the Hunter ",
         "descripcion": "El inmigrante ruso Sergei Kravinoff emprende una misión para demostrar que es el mejor cazador del mundo.",
         "genero": "Accion",
-        "actores": ["Aaron Taylor-Johnson ", "Russell Crowe"],
+        "actores": [
+            "Aaron Taylor-Johnson ",
+            "Russell Crowe"
+        ],
         "trailer": "https://www.youtube.com/watch?v=JoWdhvrkKjo",
-        "imagen": "/assets/img/kraven.webp",
-        "fecha": "2024-12-12"
+        "imagen": "assets/img/kraven.webp",
+        "fecha": "2024-12-12",
+        "id": 23,
+        "horario": "18:00"
     },
-
-
     {
         "titulo": "Sonic 3, la película ",
         "descripcion": "Sonic 3, La película ​​ es una próxima película de comedia de acción y aventuras basada en la serie de videojuegos publicada por Sega, la secuela de Sonic, la película y Sonic 2, la película.",
         "genero": "Animacion",
-        "actores": ["Keanu Reeves", "Jim Carrey"],
+        "actores": [
+            "Keanu Reeves",
+            "Jim Carrey"
+        ],
         "trailer": "https://www.youtube.com/watch?v=6BRTynghfp0",
-        "imagen": "/assets/img/sonic.jpg",
-        "fecha": "2024-12-26"
+        "imagen": "assets/img/sonic.jpg",
+        "fecha": "2024-12-26",
+        "id": 24,
+        "horario": "18:00"
     },
-
-
     {
         "titulo": "Borderlands",
         "descripcion": "Borderlands es una próxima película estadounidense de comedia de acción y ciencia ficción dirigida por Eli Roth, quien coescribió el guion con Joe Crombie, basada en la serie de videojuegos del mismo nombre desarrollada por Gearbox Software y publicada por 2K.",
-        "genero": "Ciencia Ficcion  ",
-        "actores": ["Kevin Hart", "Ariana Greenblatt"],
+        "genero": "Ciencia Ficcion",
+        "actores": [
+            "Kevin Hart",
+            "Ariana Greenblatt"
+        ],
         "trailer": "https://www.youtube.com/watch?v=Zusyjsct4WA",
-        "imagen": "/assets/img/borderlands.jpg",
-        "fecha": "2024-08-08"
+        "imagen": "assets/img/borderlands.jpg",
+        "fecha": "2024-08-08",
+        "id": 25,
+        "horario": "18:00"
     },
-
-
-
     {
         "titulo": "The crow",
         "descripcion": "The Crow es una futura película estadounidense de superhéroes sobrenaturales dirigida por Rupert Sanders y con un guion de Zach Baylin y Will Schneider. Será la quinta entrega de la serie de películas The Crow, The Crow: City of Angels, The Crow: Salvation y The Crow: Wicked Prayer y servirá como reinicio de la Saga.",
         "genero": "Accion",
-        "actores": ["Bill Skarsgård", "FKA twigs"],
+        "actores": [
+            "Bill Skarsgård",
+            "FKA twigs"
+        ],
         "trailer": "https://www.youtube.com/watch?v=djSKp_pwmOA",
-        "imagen": "/assets/img/crow.jpg",
-        "fecha": "2024-08-22"
+        "imagen": "assets/img/crow.jpg",
+        "fecha": "2024-08-22",
+        "id": 26,
+        "horario": "18:00"
     },
-
-
-
     {
         "titulo": "Blackpink World Tour Born Pink In Cinemas",
         "descripcion": "¡La gira BORN PINK de BLACKPINK que cautivó al mundo llega a la pantalla grande, celebrando el octavo aniversario del grupo desde su debut! Con una audiencia de 1,8 millones y batiendo récords mundiales en giras de conciertos de grupos femeninos, ¡experimente la energía de las presentaciones en vivo en cines de todo el mundo! Con el icónico set de 'Hanok' que ha cautivado a los fans y a la prensa de todo el mundo, la película muestra una escala de producción sin precedentes, presentando versiones arregladas exclusivamente de las canciones exitosas de BLACKPINK únicas para este concierto y abarcando actuaciones desde el Gocheok Dome de Seúl junto con imágenes de otras ciudades a lo largo de la gira mundial. . Únase a nosotros para vivir todos los momentos emocionantes, que se estrenará en más de 110 países y que marcará el estreno mundial de un evento cinematográfico más grande jamás realizado para un grupo femenino.",
         "genero": "Conciertos",
-        "actores": ["Jisoo, Jennie, Rosé, Lisa"],
+        "actores": [
+            "Jisoo, Jennie, Rosé, Lisa"
+        ],
         "trailer": "https://www.youtube.com/watch?v=nBVrh2HRdHQ",
-        "imagen": "/assets/img/blackpink.webp",
+        "imagen": "assets/img/blackpink.webp",
         "fecha": "2024-07-31",
-        "horario": "12:00"
+        "horario": "12:00",
+        "id": 27
     },
-
-
     {
         "titulo": "Tornados",
         "descripcion": "Tornados es una próxima película estadounidense de dirigida por Lee Isaac Chung a partir de un guion de Mark L. Smith. Producida por Frank Marshall y Patrick Crowley, se describe como un nuevo capitulo de la película Twister de 1996.",
         "genero": "Accion",
-        "actores": ["Glen Powell", "Anthony Ramos"],
+        "actores": [
+            "Glen Powell",
+            "Anthony Ramos"
+        ],
         "trailer": "https://www.youtube.com/watch?v=kFQPaJnUyq8",
-        "imagen": "/assets/img/tornados.jpg",
+        "imagen": "assets/img/tornados.jpg",
         "fecha": "2024-07-11",
-        "horario": "14:00"
+        "horario": "14:00",
+        "id": 28
     },
-
-
     {
         "titulo": "The Deep Web: Murdershow",
         "descripcion": "La búsqueda de pistas sobre la muerte de su hermana lleva a un podcaster a la red profunda donde descubre The Murdershow, un sitio donde el mejor postor de criptomonedas selecciona cómo se matará a la víctima.",
         "genero": "Terror",
-        "actores": ["Aiden Howard", "Lauren Jackson "],
+        "actores": [
+            "Aiden Howard",
+            "Lauren Jackson "
+        ],
         "trailer": "https://www.youtube.com/watch?v=v98lU7v0XLk",
-        "imagen": "/assets/img/deepweb.jpeg",
+        "imagen": "assets/img/deepweb.jpeg",
         "fecha": "2024-07-11",
-        "horario": "20:00"
+        "horario": "20:00",
+        "id": 29
     },
-
-
-
     {
         "titulo": "La otra cara de la de la luna",
         "descripcion": "La otra cara de la luna es una próxima película de comedia romántica de 2024 dirigida por Greg Berlanti, escrita por Rose Gilroy, y protagonizada por Scarlett Johansson y Channing Tatum.",
         "genero": "Drama",
-        "actores": ["Scarlett Johansson", "Channing Tatum"],
+        "actores": [
+            "Scarlett Johansson",
+            "Channing Tatum"
+        ],
         "trailer": "https://www.youtube.com/watch?v=XhaFkc0ICMU",
-        "imagen": "/assets/img/luna.jpg",
+        "imagen": "assets/img/luna.jpg",
         "fecha": "2024-07-18",
-        "horario": "15:00"
+        "horario": "15:00",
+        "id": 30
     },
-
-
     {
         "titulo": "Herencia Siniestra ",
         "descripcion": "La búsqueda de Edward de su familia biológica lo lleva a él y a su novia a una hermosa villa en las montañas del norte de Portugal, donde finalmente conoce a su madre y a su hermano gemelo, pero pronto descubre que hay un monstruoso secreto.",
         "genero": "Terror",
-        "actores": ["Alba Baptista", "Carloto Cotta"],
+        "actores": [
+            "Alba Baptista",
+            "Carloto Cotta"
+        ],
         "trailer": "https://www.youtube.com/watch?v=aBL3h0Ux4cA",
-        "imagen": "/assets/img/herencia.jpg",
-        "fecha": "2024-08-08"
+        "imagen": "assets/img/herencia.jpg",
+        "fecha": "2024-08-08",
+        "id": 31,
+        "horario": "18:00"
     }
-
-
-    
-
-
 ]

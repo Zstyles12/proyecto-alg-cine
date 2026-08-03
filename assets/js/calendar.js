@@ -1,26 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const darkModeSwitch = document.getElementById('darkModeSwitch');
-    const body = document.body;
-
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        body.classList.add('dark-mode');
-        darkModeSwitch.checked = true;
-    } else {
-        body.classList.remove('dark-mode');
-        darkModeSwitch.checked = false;
-    }
-
-    darkModeSwitch.addEventListener('change', function() {
-        if (darkModeSwitch.checked) {
-            body.classList.add('dark-mode');
-            localStorage.setItem('darkMode', 'enabled');
-        } else {
-            body.classList.remove('dark-mode');
-            localStorage.setItem('darkMode', 'disabled');
-        }
-    });
-});
-
 document.addEventListener('DOMContentLoaded', function () {
     let peliculas = [];
 
@@ -43,10 +20,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function inicializarCalendario() {
         const calendarEl = document.getElementById('calendar');
+        if (!calendarEl) return;
         const calendar = new FullCalendar.Calendar(calendarEl, {
             initialView: 'dayGridMonth',
             events: peliculas.map(pelicula => ({
-                title: `${pelicula.titulo} - ${pelicula.horario}`,
+                title: `${pelicula.titulo} - ${pelicula.horario || 'Por definir'}`,
                 start: pelicula.fecha,
                 extendedProps: {
                     genero: pelicula.genero,
@@ -74,45 +52,23 @@ document.addEventListener('DOMContentLoaded', function () {
         calendar.render();
     }
 
-    function toggleDarkMode() {
-        document.body.classList.toggle('dark-mode');
-        const isDarkMode = document.body.classList.contains('dark-mode');
-        localStorage.setItem('dark-mode', isDarkMode);
+    // Configuración de ParticleJS para el lado izquierdo
+    if (document.getElementById('particles-js-left')) {
+        particlesJS('particles-js-left', {
+            "particles": {
+                "number": { "value": 20, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#2d24bb" }
+            }
+        });
     }
 
-    if (localStorage.getItem('dark-mode') === 'true') {
-        document.body.classList.add('dark-mode');
+    // Configuración de ParticleJS para el lado derecho
+    if (document.getElementById('particles-js-right')) {
+        particlesJS('particles-js-right', {
+            "particles": {
+                "number": { "value": 20, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#2d24bb" }
+            }
+        });
     }
-
-    document.getElementById('darkModeSwitch').addEventListener('click', toggleDarkMode);
-
-    particlesJS('particles-js-left', {
-        "particles": {
-            "number": {
-                "value": 20,
-                "density": {
-                    "enable": true,
-                    "value_area": 800
-                }
-            },
-            "color": {
-                "value": "#2d24bb"
-            },
-        }
-    });
-
-    particlesJS('particles-js-right', {
-        "particles": {
-            "number": {
-                "value": 20,
-                "density": {
-                    "enable": true,
-                    "value_area": 800
-                }
-            },
-            "color": {
-                "value": "#2d24bb"
-            },
-        }
-    });
 });

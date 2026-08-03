@@ -1,74 +1,174 @@
+﻿/* =============================================
+   styles.css — Páginas de autenticación
+   Carga DESPUÉS de home.css; todos los estilos
+   usan mayor especificidad para ganar.
+   ============================================= */
+
+/* ---- Fondo de la página ---- */
 body {
-    background-image: url('/assets/img/xo.jfif');
-    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Hace que la imagen de fondo se mantenga fija cuando se hace scroll */
-    height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
+    background-image: url('../img/xo.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
-body.dark-mode {
-    background-image: url('/assets/img/your-dark-background.jpg'); /* Reemplaza con la ruta de tu imagen de fondo para el modo oscuro */
-    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Hace que la imagen de fondo se mantenga fija cuando se hace scroll */
-    height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+    transition: background-color 0.3s;
 }
+body.dark-mode::before {
+    background-color: rgba(18, 18, 18, 0.8);
+}
+
+/* ---- Tarjeta de formulario ---- */
+.auth-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 70px);
+    padding: 1rem;
+}
+
 .login-container,
 .register-container {
     width: 100%;
-    max-width: 400px;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 0; /* Alinea el contenedor a la izquierda */
-    }
-
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+    max-width: 440px;
+    padding: 2rem 2rem 1.5rem;
+    background-color: #ffffffee;
+    backdrop-filter: blur(6px);
+    border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
 }
 
-.dark-mode .login-container,
-.dark-mode .register-container {
-    background-color: #1e1e1e;
-    border-color: #333;
+/* ---- Tipografía del formulario ---- */
+.login-container h2,
+.register-container h2 {
+    color: #185abc;
+}
+body.dark-mode .login-container h2,
+body.dark-mode .register-container h2 {
+    color: #6ea8fe;
 }
 
-.dark-mode .form-control {
-    background-color: #3f3c3c;
+.auth-subtitle {
+    color: #6c757d;
+}
+body.dark-mode .auth-subtitle {
+    color: #b8c0cc;
+}
+
+/* ---- Etiquetas ---- */
+body .auth-wrapper .form-label {
+    color: #343a40;
+    font-weight: 600;
+}
+body.dark-mode .auth-wrapper .form-label {
+    color: #e6e6e6;
+}
+
+/* ---- Campos de texto (ganan por especificidad: body.dark-mode) ---- */
+body.dark-mode .auth-wrapper .form-control {
+    background-color: #2b2b2b;
     border-color: #444;
-    color: #ffffff;
+    color: #f0f0f0;
+}
+body.dark-mode .auth-wrapper .form-control::placeholder {
+    color: #9e9e9e;
+}
+body.dark-mode .auth-wrapper .form-control:focus {
+    background-color: #333;
+    color: #fff;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.dark-mode .form-control:focus {
-    background-color: #9e9e9e;
-    border-color: #e0e4e9;
-    color: #ffffff;
+/* ---- Iconos del input-group ---- */
+body .auth-wrapper .input-group-text {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    color: #495057;
+}
+body.dark-mode .auth-wrapper .input-group-text {
+    background-color: #2b2b2b;
+    border-color: #444;
+    color: #adb5bd;
+}
+body.dark-mode .auth-wrapper .input-group:focus-within .input-group-text {
+    border-color: #007bff;
 }
 
-.dark-mode .form-control-icon {
-    color: #ffffff;
+/* ---- Select oscuro ---- */
+body.dark-mode .auth-wrapper select.form-control {
+    background-color: #2b2b2b;
+    border-color: #444;
+    color: #f0f0f0;
+}
+body.dark-mode .auth-wrapper select.form-control option {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
 }
 
-.dark-mode .btn-primary {
+/* ---- Tarjeta en dark mode ---- */
+body.dark-mode .auth-wrapper .login-container,
+body.dark-mode .auth-wrapper .register-container {
+    background-color: #1e1e1eee;
+    border: 1px solid #333;
+}
+
+/* ---- Texto de la tarjeta ---- */
+body.dark-mode .auth-wrapper p {
+    color: #cccccc;
+}
+
+/* ---- Botones ---- */
+body .auth-wrapper .btn-primary {
     background-color: #007bff;
-    border: none;
+    border-color: #007bff;
 }
-
-.dark-mode .btn-primary:hover {
+body .auth-wrapper .btn-primary:hover {
     background-color: #0056b3;
+    border-color: #0056b3;
 }
 
-.dark-mode .btn-link {
-    color: #007bff;
+body .auth-wrapper .btn-outline-light {
+    border-color: #6c757d;
+    color: #343a40;
+}
+body .auth-wrapper .btn-outline-light:hover {
+    background-color: #343a40;
+    color: #fff;
 }
 
-.dark-mode .btn-link:hover {
-    color: #0056b3;
+body.dark-mode .auth-wrapper .btn-outline-light {
+    border-color: #adb5bd;
+    color: #e6e6e6;
+}
+body.dark-mode .auth-wrapper .btn-outline-light:hover {
+    background-color: #adb5bd;
+    color: #121212;
 }
 
+body.dark-mode .auth-wrapper .btn-link {
+    color: #5aa2ff;
+}
+body.dark-mode .auth-wrapper .btn-link:hover {
+    color: #7db4ff;
+}
 
-
+/* ---- Legacy (se mantiene por si algo lo referencia) ---- */
+.form-control-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+body.dark-mode .form-control-icon {
+    color: #adb5bd;
+}

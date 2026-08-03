@@ -4,70 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartelera de Cine</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
     <div id="particles-js-left" class="particles-js"></div>
     <div id="particles-js-right" class="particles-js"></div>   
 
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index-admin.html">Cartelera de Cine</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index-admin.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html">Cerrar cesion</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="admin.html">Admin</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categorías
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Accion')">Acción</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Animacion')">Animación</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Aventura')">Aventura</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Ciencia Ficcion')">Ciencia Ficción</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Conciertos')">Conciertos</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Comedia')">Comedia</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Documental')">Documental</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Drama')">Drama</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Fantasia')">Fantasía</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Romance')">Romance</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Superheroes')">Superhéroes</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="filtrarCategoria('Terror')">Terror</a></li>
-                        </ul>
-                    </li>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" id="busqueda" placeholder="Buscar..." aria-label="Buscar">
-                </form>
-                <input type="checkbox" id="darkModeSwitch" class="btn btn-outline-light" />
-                <label for="darkModeSwitch" class="btn btn-outline-light">Modo Oscuro</label>
-                
-                
-                
-                </div>
-            </div>
-        </div>
-    </nav>
+    <!-- Barra de navegación (renderizada por navbar.js) -->
+    <nav id="navbar" data-nav="admin"></nav>
 
     <div id="main-content" class="container mt-5">
         <div id="alertas"></div>
         <div class="row" id="peliculas"></div>
     </div>
     
+    <script src="assets/js/auth.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="assets/js/script.js"></script>
